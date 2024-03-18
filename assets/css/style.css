@@ -1,4 +1,35 @@
+/*Add fonts here*/
+
 body {
     background-color: #D7F2BA;
     color: #22333B;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header a {
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+#start-div, #game-div, #result-div {
+    position: fixed;
+    right:12.5%;
+    left:12.5%;
+    width: 75%;
+    height: 75%;
+    border: 2px solid black;
 }

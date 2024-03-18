@@ -10,6 +10,38 @@
     <title>The Flag Quiz</title>
 </head>
 <body>
+    <header>
+        <h1>The Flag Quiz</h1>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <!--Content for landing page-->
+        <div id="start-div">
+            <p>Instructions</p>
+            <button id="easy-button">EASY</button>
+            <button id="moderate-button">MODERATE</button>
+            <button id="hard-button">HARD</button>
+            <button id="start-button">START THE QUIZ</button>
+        </div>
+        <!--Content for game-->
+        <div id="game-div">
+            <img src="" alt="" id="flag">
+            <div id="option-container">
+                <button>Option1</button>
+                <button>Option2</button>
+                <button>Option3</button>
+                <button>Option4</button>
+                <button>Option5</button>
+            </div>
+            <p id="correct-counter">X correct answers</p>
+        </div>
+        <!--Content for the result-->
+        <div id="result-div">
+            <p id="result-message">Congratulations!</p>
+            <p id="final-result"></p>
+            <button id="restart-button">Try again?</button>
+        </div>
+    </main>
     
     <script src="assets/js/script.js"></script>
 </body>
