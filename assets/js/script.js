@@ -6,6 +6,11 @@ let easyFlags = [
     {name: "Brazil", flag: "assets/images/flags-easy/brazil.png"},
     {name: "Canada", flag: "assets/images/flags-easy/canada.png"},
     {name: "China", flag: "assets/images/flags-easy/china.png"},
+    {name: "Czech Republic", flag: "assets/images/flags-easy/czech_republic.png"},
+    {name: "France", flag: "assets/images/flags-easy/france.png"},
+    {name: "Italy", flag: "assets/images/flags-easy/italy.png"},
+    {name: "Japan", flag: "assets/images/flags-easy/japan.png"},
+    {name: "Mexico", flag: "assets/images/flags-easy/mexico.png"},
 ]
 
 // Wait for DOM to load, then get difficulty input
