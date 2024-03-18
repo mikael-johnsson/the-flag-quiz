@@ -25,6 +25,7 @@ header a {
 
 }
 
+/*Main content*/
 #start-div, #game-div, #result-div {
     position: fixed;
     right:12.5%;
@@ -32,4 +33,21 @@ header a {
     width: 75%;
     height: 75%;
     border: 2px solid black;
+}
+
+#start-div {
+display: none;
+}
+
+#game-div {
+display: block;
+}
+
+#flag {
+    height: 40%;
+    border: 2px solid black;
+}
+
+#result-div {
+display: none;
 }
