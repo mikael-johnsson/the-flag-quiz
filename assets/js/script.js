@@ -1,28 +1,5 @@
 
-// Wait for DOM to load, then get difficulty input
-document.addEventListener("DOMContentLoaded",function(){
-    let buttons = this.getElementsByClassName("difficulty-buttons");
-    let flags;
-    alert("hello")
-    for (let button of buttons){
-        button.addEventListener("click",function(){
-            if (this.getAttribute("id") === "easy-button"){
-                //flags = easyFlags
-                alert("You clicked Easy");
-            } else if (this.getAttribute("id") === "moderate-button"){
-                //flags = moderateFlags
-                alert(`You clicked moderate`);
-            } else {
-                // flags = hardFlags
-                alert(`You clicked hard`);
-            }
-        } )
-    }
-return flags;
-})
-
 // Flag arrays
-
 let easyFlags = [
     {name: "Argentina", flag: "assets/images/flags-easy/argentina.png"},
     {name: "Austria", flag: "assets/images/flags-easy/austria.png"},
@@ -31,6 +8,30 @@ let easyFlags = [
     {name: "China", flag: "assets/images/flags-easy/china.png"},
 ]
 
+// Wait for DOM to load, then get difficulty input
+document.addEventListener("DOMContentLoaded",function(){
+    let buttons = this.getElementsByClassName("difficulty-buttons");
+    let flags;
+    for (let button of buttons){
+        button.addEventListener("click",function(){
+            if (this.getAttribute("id") === "easy-button"){
+                flags = easyFlags
+                alert("You clicked Easy");
+            } else if (this.getAttribute("id") === "moderate-button"){
+                //flags = moderateFlags
+                alert(`You clicked moderate`);
+            } else if (this.getAttribute("id") === "hard-button"){
+                //flags = hardFlags
+                alert(`You clicked hard`);
+            } else if (this.getAttribute("id") === "start-button" && flags !== undefined) {
+                runGame();
+                alert("You want to start game")
+            } else alert("You need to choose difficulty")
+        } )
+    }
+
+return flags;
+})
 
 function runGame() {
 
