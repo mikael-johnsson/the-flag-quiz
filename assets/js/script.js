@@ -44,7 +44,7 @@ function runGame(flags) {
     //To generate flag
     let flag = Math.floor(Math.random() * flags.length + 1);
     let question = flags[flag];
-    document.getElementById("flag").src = question.flag;
+    document.getElementById("flag").src = question.flag; //correct answer is now in question.name
 
     //to generate options
     let optionButtons = document.getElementsByClassName("option");
