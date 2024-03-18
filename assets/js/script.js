@@ -24,20 +24,29 @@ document.addEventListener("DOMContentLoaded",function(){
                 //flags = hardFlags
                 alert(`You clicked hard`);
             } else if (this.getAttribute("id") === "start-button" && flags !== undefined) {
-                runGame();
-                alert("You want to start game")
+                runGame(flags);
+                //alert("You want to start game")
             } else alert("You need to choose difficulty")
         } )
     }
-
-return flags;
 })
 
-function runGame() {
-
+function runGame(flags) {
+    document.getElementById("start-div").style.display = "none"
+    document.getElementById("game-div").style.display = "block"
+    // fix the flags variable bug below
+    if (flags !== "easyFlags"){
+    alert("the Game is easyFlags")
+    let i = Math.floor(Math.random() * flags.length + 1) 
+    let question = flags[i]
+    console.log(question["name"])
+    }
+     
 }
 
-function displayQuestion(){}
+function displayQuestion(){
+
+}
 
 function compareAnswer(){}
 
