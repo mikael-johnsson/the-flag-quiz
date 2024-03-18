@@ -32,15 +32,25 @@ document.addEventListener("DOMContentLoaded",function(){
 })
 
 function runGame(flags) {
+    //To display the game-div
     document.getElementById("start-div").style.display = "none"
     document.getElementById("game-div").style.display = "block"
-    // fix the flags variable bug below
-    if (flags !== "easyFlags"){
-    alert("the Game is easyFlags")
-    let i = Math.floor(Math.random() * flags.length + 1) 
-    let question = flags[i]
-    console.log(question["name"])
+
+    //To generate flag
+    let flag = Math.floor(Math.random() * flags.length + 1);
+    let question = flags[flag];
+    document.getElementById("flag").src = question.flag;
+
+    //to generate options
+    let optionButtons = document.getElementsByClassName("option");
+    let i = 0;
+    while (i <= 4){
+        let country = Math.floor(Math.random() * flags.length + 1);
+        optionButtons[i].textContent = flags[country].name 
+        i++;
     }
+    
+    
      
 }
 
