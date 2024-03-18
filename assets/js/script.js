@@ -1,3 +1,26 @@
+
+// Wait for DOM to load, then get difficulty input
+document.addEventListener("DOMContentLoaded",function(){
+    let buttons = this.getElementsByClassName("difficulty-buttons");
+    let flags;
+    alert("hello")
+    for (let button of buttons){
+        button.addEventListener("click",function(){
+            if (this.getAttribute("id") === "easy-button"){
+                //flags = easyFlags
+                alert("You clicked Easy");
+            } else if (this.getAttribute("id") === "moderate-button"){
+                //flags = moderateFlags
+                alert(`You clicked moderate`);
+            } else {
+                // flags = hardFlags
+                alert(`You clicked hard`);
+            }
+        } )
+    }
+return flags;
+})
+
 // Flag arrays
 
 let easyFlags = [
@@ -8,12 +31,10 @@ let easyFlags = [
     {name: "China", flag: "assets/images/flags-easy/china.png"},
 ]
 
-document.addEventListener("DOMContentLoaded", function(){
-    let buttons = document.getElementsByClass("difficulty-buttons")
 
-})
+function runGame() {
 
-function runGame() {}
+}
 
 function displayQuestion(){}
 
