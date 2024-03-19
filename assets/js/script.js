@@ -12,8 +12,35 @@ let easyFlags = [
     {name: "Japan", flag: "assets/images/flags-easy/japan.png", answers: ["Japan", "Czech Republic", "Italy", "France", "Brazil"]},
     {name: "Mexico", flag: "assets/images/flags-easy/mexico.png", answers: ["Mexico", "France", "Czech Republic", "China", "Austria"]}
 ];
+
+let moderateFlags = [
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]}
+]
+
+let hardFlags = [
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]},
+    {name: "", flag: "", answers:["", "", "", "", ""]}
+]
 // global variable to help runGame
 let questionCounter = 0;
+
 // variable containing all of the chosen flags during the game // this broke the game
 let flags;
 
