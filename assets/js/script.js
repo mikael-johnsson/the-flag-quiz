@@ -106,8 +106,13 @@ function updateScore(){
 
 function endMessage(){
     alert("The Game is Over");
+    // Display result div
     document.getElementById("game-div").style.display = "none";
     document.getElementById("result-div").style.display = "block";
+
+    //Display end message
+    let finalResult = document.getElementById("score").innerText
+    document.getElementById("result-message").innerHTML = `Great job ${username.value}!\nYou got ${finalResult} correct answers!`
 }
 
 //Fisher Yates shuffle function
