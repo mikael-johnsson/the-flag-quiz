@@ -38,14 +38,25 @@ document.addEventListener("DOMContentLoaded",function(){
 
 function runGame(flags) {
     //To display the game-div
-    console.log(flags);
     document.getElementById("start-div").style.display = "none";
     document.getElementById("game-div").style.display = "block";
+
+    //Question counter
+    let i = 0;
+    let questionCounter = 0;
+    if (i <= 10){
+        let isGameOver = false;
+        displayQuestion(flags, questionCounter)
+    } else {
+        isGameOver = true;
+        endMessage();
+    }
+
 
    
 }
 
-function displayQuestion(){
+function displayQuestion(flags, questionCounter){
      //To generate flag
      let flag = Math.floor(Math.random() * flags.length + 1);
      let question = flags[flag];
@@ -55,10 +66,11 @@ function displayQuestion(){
      let optionButtons = document.getElementsByClassName("option");
      let i = 0;
      while (i <= 4){
-         let option = Math.floor(Math.random() * flags[answers].length + 1);
-         optionButtons[i].textContent = flags[option].name 
+         let option = Math.floor(Math.random() * 5 + 1);
+         optionButtons[i].innerHTML = question.answers[option]
          i++;
      }
+     questionCounter += 1;
 
 }
 
