@@ -37,11 +37,20 @@ header a {
     border: 2px solid black;
 }
 
+/*Start div*/
 #start-div {
 display: flex;
-align-items: baseline;
+align-items: center;
 flex-wrap: wrap;
 justify-content: center;
+flex-direction: column;
+gap: 20px;
+height: 50%;
+}
+
+#button-div {
+    display: flex;
+    gap: 20px;
 }
 
 #start-div p {
@@ -49,8 +58,10 @@ justify-content: center;
     width: 100%;
     font-size: x-large;
     text-align: center;
+    align-self: flex-end;
 }
 
+/*Game div*/
 #game-div {
 display: none;
 text-align: center;
@@ -79,6 +90,7 @@ padding-top: 30px;
     border: 2px solid black;
 }
 
+/*Result div*/
 #result-div {
 display: none;
 }
