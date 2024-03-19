@@ -11,6 +11,8 @@ header {
     justify-content: space-around;
     height: fit-content;
     align-items: center;
+    background-color: #CE7DA5;
+    margin: -8px -8px 0 -8px; 
 }
 
 h1 {
@@ -37,10 +39,39 @@ header a {
 
 #start-div {
 display: none;
+align-items: baseline;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#start-div p {
+    text-align: left;
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
 }
 
 #game-div {
-display: none;
+display: block;
+text-align: center;
+padding-top: 30px;
+}
+
+
+#game-div p {
+    text-align: center;
+}
+
+#option-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#option-container button {
+    font-size: large;
 }
 
 #flag {
