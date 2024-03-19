@@ -14,12 +14,14 @@ let easyFlags = [
 ];
 // global variable to help runGame
 let questionCounter = 0;
+// variable containing all of the chosen flags during the game // this broke the game
+let flags;
 
 
 // Wait for DOM to load, then get difficulty input
 document.addEventListener("DOMContentLoaded",function(){
     let buttons = this.getElementsByClassName("difficulty-buttons");
-    let flags;
+    //let flags;
     for (let button of buttons){
         button.addEventListener("click",function(){
             if (this.getAttribute("id") === "easy-button"){
@@ -89,7 +91,7 @@ function compareAnswer(selectedAnswer, correctAnswer){
     } else { 
         alert("You were wrong!");
     }
-    runGame();
+    runGame(flags);
 }
 
 //from love maths project
@@ -101,6 +103,8 @@ function updateScore(){
 
 function endMessage(){
     alert("The Game is Over");
+    document.getElementById("game-div").style.display = "none";
+    document.getElementById("result-div").style.display = "block";
 }
 
 //Fisher Yates shuffle function
