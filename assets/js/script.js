@@ -15,6 +15,7 @@ let easyFlags = [
 // global variable to help runGame
 let questionCounter = 0;
 
+
 // Wait for DOM to load, then get difficulty input
 document.addEventListener("DOMContentLoaded",function(){
     let buttons = this.getElementsByClassName("difficulty-buttons");
@@ -83,7 +84,7 @@ function displayQuestion(flags){
 
 function compareAnswer(selectedAnswer, correctAnswer){
     if (selectedAnswer === correctAnswer){
-        //updateScore()
+        updateScore()
         alert("You were correct!");
     } else { 
         alert("You were wrong!");
@@ -91,7 +92,10 @@ function compareAnswer(selectedAnswer, correctAnswer){
     runGame();
 }
 
+//from love maths project
 function updateScore(){
+    let oldScore = parseInt(document.getElementById("score").innerHTML);
+    document.getElementById("score").innerText = ++oldScore;
 
 }
 
