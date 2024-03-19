@@ -14,29 +14,39 @@ let easyFlags = [
 ];
 
 let moderateFlags = [
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]}
+    {name: "Belgium", flag: "assets/images/flags-mid/belgium.png", answers:["Belgium", "Ghana", "Lithuania", "Romania", "South Korea"]},
+    {name: "Georgia", flag: "assets/images/flags-mid/georgia.png", answers:["Georgia", "Jamaica", "Nigeria", "Portugal", "Romania"]},
+    {name: "Ghana", flag: "assets/images/flags-mid/ghana.png", answers:["Ghana", "Belgium", "Philippines", "Vietnam", "Uruguay"]},
+    {name: "Jamaica", flag: "assets/images/flags-mid/jamaica.png", answers:["Jamaica", "Thailand", "Portugal", "Georgia", "Slovakia"]},
+    {name: "Lithuania", flag: "assets/images/flags-mid/lithuania.png", answers:["Lithuania", "Tunisia", "Nigeria", "Romania", "South Korea"]},
+    {name: "Nigeria", flag: "assets/images/flags-mid/nigeria.png", answers:["Nigeria", "Philippines", "Portugal", "Thailand", "Uruguay"]},
+    {name: "Philippines", flag: "assets/images/flags-mid/philippines.png", answers:["Philippines", "Tunisia", "Lithuania", "Slovakia", "Tunisia"]},
+    {name: "Portugal", flag: "assets/images/flags-mid/portugal.png", answers:["Portugal", "Belgium", "Ghana", "Slovakia", "Vietnam"]},
+    {name: "Romania", flag: "assets/images/flags-mid/romania.png", answers:["Romania", "Jamaica", "Georgia", "South Korea", "Thailand"]},
+    {name: "Slovakia", flag: "assets/images/flags-mid/slovakia.png", answers:["Slovakia", "Belgium", "Georgia", "Nigeria", "Philippines"]},
+    {name: "South Korea", flag: "assets/images/flags-mid/south_korea.png", answers:["South Korea", "Vietnam", "Uruguay", "Nigeria", "Lithuania"]},
+    {name: "Thailand", flag: "assets/images/flags-mid/thailand.png", answers:["Thailand", "Jamaica", "Ghana", "Belgium", "Lithuania"]},
+    {name: "Tunisia", flag: "assets/images/flags-mid/tunisia.png", answers:["Tunisia", "Vietnam", "Uruguay", "Slovakia", "Romania"]},
+    {name: "Uruguay", flag: "assets/images/flags-mid/uruguay.png", answers:["Uruguay", "Portugal", "South Korea", "Thailand", "Jamaica"]},
+    {name: "Vietnam", flag: "assets/images/flags-mid/vietnam.png", answers:["Vietnam", "Tunisia", "Philippines", "Ghana", "Georgia"]}
 ]
 
 let hardFlags = [
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]},
-    {name: "", flag: "", answers:["", "", "", "", ""]}
+    {name: "Armenia", flag: "assets/images/flags-hard/armenia.png", answers:["Armenia", "Ethiopia", "Gabon", "Guatemala", "Ivory Coast"]},
+    {name: "Ethiopia", flag: "assets/images/flags-hard/ethiopia.png", answers:["Ethiopia", "Kazakhstan", "Kenya", "Pakistan", "Panama"]},
+    {name: "Faroe Islands", flag: "assets/images/flags-hard/faroe_islands.png", answers:["Faroe Islands", "Somalia", "Vatican City", "Venezuela", "Gibraltar"]},
+    {name: "Gabon", flag: "assets/images/flags-hard/gabon.png", answers:["Gabon", "Armenia", "Guatemala", "Somalia", "Sri Lanka"]},
+    {name: "Gibraltar", flag: "assets/images/flags-hard/gibraltar.png", answers:["Gibraltar", "Ivory Coast", "Kazakhstan", "Kenya", "Vatican City"]},
+    {name: "Guatemala", flag: "assets/images/flags-hard/guatemala.png", answers:["Guatemala", "Ethiopia", "Faroe Islands", "Gibraltar", "Panama"]},
+    {name: "Ivory Coast", flag: "assets/images/flags-hard/ivory_coast.png", answers:["Ivory Coast", "Armenia", "Faroe Islands", "Pakistan", "Sri Lanka"]},
+    {name: "Kazakhstan", flag: "assets/images/flags-hard/kazakhstan.png", answers:["Kazakhstan", "Venezuela", "Armenia", "Gabon", "Gibraltar"]},
+    {name: "Kenya", flag: "assets/images/flags-hard/kenya.png", answers:["Kenya", "Guatemala", "Pakistan", "Kazakhstan", "Vatican City"]},
+    {name: "Pakistan", flag: "assets/images/flags-hard/pakistan.png", answers:["Pakistan", "Venezuela", "Sri Lanka", "Somalia", "Panama"]},
+    {name: "Panama", flag: "assets/images/flags-hard/panama.png", answers:["Panama", "Kenya", "Ivory Coast", "Gabon", "Ethiopia"]},
+    {name: "Somalia", flag: "assets/images/flags-hard/somalia.png", answers:["Somalia", "Faroe Islands", "Gibraltar", "Vatican City", "Venezuela"]},
+    {name: "Sri Lanka", flag: "assets/images/flags-hard/sri_lanka.png", answers:["Sri Lanka", "Armenia", "Kazakhstan", "Ethiopia", "Panama"]},
+    {name: "Vatican City", flag: "assets/images/flags-hard/vatican_city.png", answers:["Vatican City", "Guatemala", "Gabon", "Ivory Coast", "Kenya"]},
+    {name: "Venezuela", flag: "assets/images/flags-hard/venezuela.png", answers:["Venezuela", "Sri Lanka", "Somalia", "Pakistan", "Faroe Islands"]}
 ]
 // global variable to help runGame
 let questionCounter = 0;
