@@ -37,9 +37,18 @@ header a {
     border: 2px solid black;
 }
 
-/*Start div*/
+button {
+    border-radius: 8%;
+
+}
+
+button:hover {
+box-shadow: 8px 4px 5px #22333B;
+}
+
+/*Start div*/ /*When deploying - display: flex;*/
 #start-div {
-display: flex;
+display: none;
 align-items: center;
 flex-wrap: wrap;
 justify-content: center;
@@ -90,7 +99,11 @@ padding-top: 30px;
     border: 2px solid black;
 }
 
-/*Result div*/
+/*Result div*/ /*When deploying - display: none;*/
 #result-div {
-display: none;
+display: block;
+text-align: center;
+}
+#result-div button {
+    font-size: x-large;
 }
