@@ -12,6 +12,8 @@ let easyFlags = [
     {name: "Japan", flag: "assets/images/flags-easy/japan.png", answers: ["Japan", "Czech Republic", "Italy", "France", "Brazil"]},
     {name: "Mexico", flag: "assets/images/flags-easy/mexico.png", answers: ["Mexico", "France", "Czech Republic", "China", "Austria"]}
 ];
+// global variable to help runGame
+let questionCounter = 0;
 
 // Wait for DOM to load, then get difficulty input
 document.addEventListener("DOMContentLoaded",function(){
@@ -21,7 +23,6 @@ document.addEventListener("DOMContentLoaded",function(){
         button.addEventListener("click",function(){
             if (this.getAttribute("id") === "easy-button"){
                 flags = easyFlags;
-                alert("You clicked Easy");
             } else if (this.getAttribute("id") === "moderate-button"){
                 //flags = moderateFlags
                 alert(`You clicked moderate`);
@@ -31,57 +32,74 @@ document.addEventListener("DOMContentLoaded",function(){
             } else if (this.getAttribute("id") === "start-button" && flags !== undefined) {
                 runGame(flags);
                 //alert("You want to start game")
-            } else alert("You need to choose difficulty")
+            } else alert("You need to choose difficulty");
         } )
     }
 })
+
+
 
 function runGame(flags) {
     //To display the game-div
     document.getElementById("start-div").style.display = "none";
     document.getElementById("game-div").style.display = "block";
-
+    
     //Question counter
-    let i = 0;
-    let questionCounter = 0;
-    if (i <= 10){
-        let isGameOver = false;
-        displayQuestion(flags, questionCounter)
+    if (questionCounter < 10){
+        displayQuestion(flags);
     } else {
-        isGameOver = true;
         endMessage();
     }
 
-
-   
 }
 
-function displayQuestion(flags, questionCounter){
+function displayQuestion(flags){
      //To generate flag
      let flag = Math.floor(Math.random() * flags.length + 1);
      let question = flags[flag];
-     document.getElementById("flag").src = question.flag; //correct answer is now in question.name and one of the answers
+     document.getElementById("flag").src = question.flag; //correct answer is now in question.name
     
     
-     //to generate options
-     shuffle(question)
+     //to generate options in shuffled order
+     shuffle(question);
      let optionButtons = document.getElementsByClassName("option");
      let i = 0;
      while (i <= 4){
-         optionButtons[i].innerHTML = question.answers[i]
+         optionButtons[i].innerHTML = question.answers[i];
          i++;
+        }
+     
+    questionCounter += 1;
+     //to log which answer the user selects
+     for (i of optionButtons){
+        i.addEventListener("click", function(){
+            let selectedAnswer = this.innerHTML
+            compareAnswer(selectedAnswer, question.name); 
+        })
      }
-     questionCounter += 1;
+    
+}
+
+
+function compareAnswer(selectedAnswer, correctAnswer){
+    if (selectedAnswer === correctAnswer){
+        //updateScore()
+        alert("You were correct!");
+    } else { 
+        alert("You were wrong!");
+    }
+    runGame();
+}
+
+function updateScore(){
 
 }
 
-function compareAnswer(){}
+function endMessage(){
+    alert("The Game is Over");
+}
 
-function countCorrectAnswer(){}
-
-function endMessage(){}
-
-//Fisher Yates shuffle function //update 5 to question.answers.length
+//Fisher Yates shuffle function
 function shuffle(question) {
     for (let i = question.answers.length -1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i+1));
