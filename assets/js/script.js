@@ -61,13 +61,14 @@ function displayQuestion(flags, questionCounter){
      let flag = Math.floor(Math.random() * flags.length + 1);
      let question = flags[flag];
      document.getElementById("flag").src = question.flag; //correct answer is now in question.name and one of the answers
- 
+    
+    
      //to generate options
+     shuffle(question)
      let optionButtons = document.getElementsByClassName("option");
      let i = 0;
      while (i <= 4){
-         let option = Math.floor(Math.random() * 5 + 1);
-         optionButtons[i].innerHTML = question.answers[option]
+         optionButtons[i].innerHTML = question.answers[i]
          i++;
      }
      questionCounter += 1;
@@ -79,3 +80,13 @@ function compareAnswer(){}
 function countCorrectAnswer(){}
 
 function endMessage(){}
+
+//Fisher Yates shuffle function //update 5 to question.answers.length
+function shuffle(question) {
+    for (let i = question.answers.length -1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i+1));
+      let k = question.answers[i];
+      question.answers[i] = question.answers[j];
+      question.answers[j] = k;
+    }
+}
