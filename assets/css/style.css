@@ -38,7 +38,7 @@ header a {
 }
 
 #start-div {
-display: none;
+display: flex;
 align-items: baseline;
 flex-wrap: wrap;
 justify-content: center;
@@ -52,7 +52,7 @@ justify-content: center;
 }
 
 #game-div {
-display: block;
+display: none;
 text-align: center;
 padding-top: 30px;
 }
