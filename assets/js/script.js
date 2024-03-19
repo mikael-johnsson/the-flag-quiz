@@ -32,14 +32,17 @@ document.addEventListener("DOMContentLoaded",function(){
             } else if (this.getAttribute("id") === "hard-button"){
                 //flags = hardFlags
                 alert(`You clicked hard`);
-            } else if (this.getAttribute("id") === "start-button" && flags !== undefined) {
+            } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username !== undefined) {
                 runGame(flags);
                 //alert("You want to start game")
-            } else alert("You need to choose difficulty");
+            } else alert("Have you chosen difficulty and a username?");
         } )
     }
 })
 
+//To display the chosen username
+let username = document.getElementById("username")
+document.getElementById("score-username").innerHTML = `${username.value}'s score:`
 
 
 function runGame(flags) {
