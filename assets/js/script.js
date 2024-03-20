@@ -51,9 +51,8 @@ let hardFlags = [
 // global variable to help runGame
 let questionCounter = 0;
 
-// variable containing all of the chosen flags during the game // this broke the game
+// variable containing all of the chosen flags during the game
 let flags;
-
 
 // Wait for DOM to load, then get difficulty input
 document.addEventListener("DOMContentLoaded",function(){
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded",function(){
                 flags = moderateFlags;
             } else if (this.getAttribute("id") === "hard-button"){
                 flags = hardFlags;
-            } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username !== undefined) {
+            } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username !== "") {
                 displayUsername();
                 runGame(flags);
             } else alert("Have you chosen difficulty and a username?");
@@ -90,13 +89,17 @@ function runGame(flags) {
     //To display the game-div
     document.getElementById("start-div").style.display = "none";
     document.getElementById("game-div").style.display = "block";
-    
+    console.log(questionCounter);
     //Question counter
+    
     if (questionCounter < 10){
         displayQuestion(flags);
-    } else {
+    }  else { 
         endMessage();
+
     }
+    
+    
 
 }
 
@@ -106,7 +109,8 @@ function runGame(flags) {
  */
 function displayQuestion(flags){
      //To generate flag
-     let randomNumber = Math.floor(Math.random() * flags.length + 1);
+     let randomNumber = Math.floor(Math.random() * flags.length);
+     console.log("randomNumber", randomNumber);
      let question = flags[randomNumber];
      document.getElementById("flag").src = question.flag; //correct answer is now in question.name
     
@@ -122,16 +126,31 @@ function displayQuestion(flags){
      questionCounter += 1;
      
      //to log which answer the user selects
-     let selectedAnswer;
-     for (i of optionButtons){
-        i.addEventListener("click", function(){
-            selectedAnswer = this.innerHTML;
-            compareAnswer(selectedAnswer, question.name); //is the problem that we are reading selected answer in the loop? Cant move out of loop
-        })
+     //let selectedAnswer = "";
+    // for (let x of optionButtons){
+   // x.addEventListener("click", function(){
+    //    selectedAnswer = this.innerHTML;
+     //   console.log(this.innerHTML)
+     //   if (selectedAnswer !== ""){
+    //        compareAnswer(selectedAnswer, question.name); 
+    //    }
+    //    selectedAnswer = "";
+    //})
         /*if (selectedAnswer){
             break;
         }  compareAnswer(selectedAnswer, question.name);*/
-     }
+    // }
+
+     
+        for (var y = 0; y < optionButtons.length; y++) {
+            optionButtons[y].onclick = function() {
+
+            var selectedAnswer = this.innerHTML;
+            compareAnswer(selectedAnswer, question.name);
+         };
+        }
+
+     //console.log(selectedAnswer)
      
 }
 /**
@@ -139,6 +158,7 @@ function displayQuestion(flags){
  * to the correct answer
  */
 function compareAnswer(selectedAnswer, correctAnswer){
+    console.log("hello")
     if (selectedAnswer === correctAnswer){
         updateScore();
         alert("You were correct!");
@@ -147,6 +167,7 @@ function compareAnswer(selectedAnswer, correctAnswer){
     } else {
         alert("Something weird happened")
     }
+    selectedAnswer ="";
     runGame(flags);
 }
 
