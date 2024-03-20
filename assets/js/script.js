@@ -64,25 +64,22 @@ document.addEventListener("DOMContentLoaded",function(){
             if (this.getAttribute("id") === "easy-button"){
                 flags = easyFlags;
             } else if (this.getAttribute("id") === "moderate-button"){
-                //flags = moderateFlags
-                alert(`You clicked moderate`);
+                flags = moderateFlags
             } else if (this.getAttribute("id") === "hard-button"){
-                //flags = hardFlags
-                alert(`You clicked hard`);
+                flags = hardFlags
             } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username !== undefined) {
+                displayUsername();
                 runGame(flags);
-                //alert("You want to start game")
             } else alert("Have you chosen difficulty and a username?");
         } )
     }
 })
 
 //To display the chosen username
+function displayUsername(){
 let username = document.getElementById("username").value;
-console.log(username);
-document.getElementById("score-username").innerHTML = `${username}'s score:`;
-
-
+    document.getElementById("score-username").innerHTML = `${username}'s score:`;
+}
 
 function runGame(flags) {
     //To display the game-div
