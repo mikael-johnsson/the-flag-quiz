@@ -75,12 +75,17 @@ document.addEventListener("DOMContentLoaded",function(){
     }
 })
 
-//To display the chosen username
+/**
+ * Used to display the username
+ */
 function displayUsername(){
 let username = document.getElementById("username").value;
     document.getElementById("score-username").innerHTML = `${username}'s score:`;
 }
-
+/**
+ * Displays the game page and 
+ * counts if the game is over or not
+ */
 function runGame(flags) {
     //To display the game-div
     document.getElementById("start-div").style.display = "none";
@@ -95,6 +100,10 @@ function runGame(flags) {
 
 }
 
+/**
+ * Displays flag and options.
+ * Logs the users selected answer
+ */
 function displayQuestion(flags){
      //To generate flag
      let randomNumber = Math.floor(Math.random() * flags.length + 1);
@@ -125,7 +134,10 @@ function displayQuestion(flags){
      }
      
 }
-
+/**
+ * Compare the users selected answer 
+ * to the correct answer
+ */
 function compareAnswer(selectedAnswer, correctAnswer){
     if (selectedAnswer === correctAnswer){
         updateScore();
@@ -138,13 +150,21 @@ function compareAnswer(selectedAnswer, correctAnswer){
     runGame(flags);
 }
 
-//from love maths project
+//UpdateScore() is taken from CI's Love Maths project
+/**
+ * Updates the score if the correct answer was chosen.
+ */
 function updateScore(){
     let oldScore = parseInt(document.getElementById("score").innerHTML);
     document.getElementById("score").innerText = ++oldScore;
 
 }
 
+/**
+ * Displays the Result page
+ * including the end message
+ * and the final score
+ */
 function endMessage(){
     alert("The Game is Over");
     // Display result div
@@ -157,6 +177,10 @@ function endMessage(){
 }
 
 //Fisher Yates shuffle function
+/**
+ * Function used to shuffle the options
+ * on the option buttons
+ */
 function shuffle(question) {
     for (let i = question.answers.length -1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i+1));
