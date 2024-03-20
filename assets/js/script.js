@@ -64,9 +64,9 @@ document.addEventListener("DOMContentLoaded",function(){
             if (this.getAttribute("id") === "easy-button"){
                 flags = easyFlags;
             } else if (this.getAttribute("id") === "moderate-button"){
-                flags = moderateFlags
+                flags = moderateFlags;
             } else if (this.getAttribute("id") === "hard-button"){
-                flags = hardFlags
+                flags = hardFlags;
             } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username !== undefined) {
                 displayUsername();
                 runGame(flags);
@@ -97,8 +97,8 @@ function runGame(flags) {
 
 function displayQuestion(flags){
      //To generate flag
-     let flag = Math.floor(Math.random() * flags.length + 1);
-     let question = flags[flag];
+     let randomNumber = Math.floor(Math.random() * flags.length + 1);
+     let question = flags[randomNumber];
      document.getElementById("flag").src = question.flag; //correct answer is now in question.name
     
     
@@ -110,25 +110,30 @@ function displayQuestion(flags){
          optionButtons[i].innerHTML = question.answers[i];
          i++;
         }
+     questionCounter += 1;
      
-    questionCounter += 1;
      //to log which answer the user selects
+     let selectedAnswer;
      for (i of optionButtons){
         i.addEventListener("click", function(){
-            let selectedAnswer = this.innerHTML
-            compareAnswer(selectedAnswer, question.name); 
+            selectedAnswer = this.innerHTML;
+            compareAnswer(selectedAnswer, question.name); //is the problem that we are reading selected answer in the loop? Cant move out of loop
         })
+        /*if (selectedAnswer){
+            break;
+        }  compareAnswer(selectedAnswer, question.name);*/
      }
-    
+     
 }
-
 
 function compareAnswer(selectedAnswer, correctAnswer){
     if (selectedAnswer === correctAnswer){
-        updateScore()
+        updateScore();
         alert("You were correct!");
-    } else { 
+    } else if (selectedAnswer !== correctAnswer){ 
         alert("You were wrong!");
+    } else {
+        alert("Something weird happened")
     }
     runGame(flags);
 }
