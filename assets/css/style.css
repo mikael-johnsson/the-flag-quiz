@@ -39,6 +39,7 @@ header a {
 
 button {
     border-radius: 8%;
+    font-size: xx-large;
 }
 
 button:hover {
@@ -115,4 +116,18 @@ text-align: center;
 }
 #result-div button {
     font-size: x-large;
+}
+
+#result-message, #final-result {
+    font-size: x-large;
+}
+
+/*For tablets*/
+@media screen and (max-width: 991px){
+
+}
+
+/*For phones*/
+@media screen and (max-width: 767px){
+    
 }
