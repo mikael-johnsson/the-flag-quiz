@@ -45,7 +45,7 @@ button:hover {
 box-shadow: 8px 4px 5px #22333B;
 }
 
-button:active, button:focus {
+button:active {
     background-color: #a19b9b;
     box-shadow: 6px 3px 4px #22333B;
 }
@@ -64,6 +64,11 @@ height: 50%;
 #button-div {
     display: flex;
     gap: 20px;
+}
+
+#button-div button:focus {
+    background-color: #a19b9b;
+    box-shadow: 6px 3px 4px #22333B;
 }
 
 #start-div p {
