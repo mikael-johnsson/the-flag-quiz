@@ -27,6 +27,10 @@ header a {
     text-align: center;
 }
 
+header a:visited {
+    color: #22333B;
+}
+
 header img {
     width: 90px;
     height: auto;
