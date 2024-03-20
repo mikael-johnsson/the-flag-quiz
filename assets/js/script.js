@@ -78,8 +78,10 @@ document.addEventListener("DOMContentLoaded",function(){
 })
 
 //To display the chosen username
-let username = document.getElementById("username")
-document.getElementById("score-username").innerHTML = `${username.value}'s score:`
+let username = document.getElementById("username").value;
+console.log(username);
+document.getElementById("score-username").innerHTML = `${username}'s score:`;
+
 
 
 function runGame(flags) {

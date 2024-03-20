@@ -54,7 +54,7 @@ button:active {
 
 /*Start div*/ /*When deploying - display: flex;*/
 #start-div {
-display: none;
+display: flex;
 align-items: center;
 flex-wrap: wrap;
 justify-content: center;
@@ -107,7 +107,7 @@ padding-top: 30px;
 
 /*Result div*/ /*When deploying - display: none;*/
 #result-div {
-display: block;
+display: none;
 text-align: center;
 }
 #result-div button {
