@@ -25,6 +25,11 @@ header a {
     text-align: center;
 }
 
+header img {
+    width: 90px;
+    height: auto;
+}
+
 /*Main content*/
 #start-div, #game-div, #result-div {
     position: fixed;
@@ -149,6 +154,11 @@ padding-top: 60px;
 
     header a {
         font-size: 1.2rem;
+    }
+
+    header img {
+        width: 35px;
+        height: auto;
     }
 
     /*Main Content*/
