@@ -37,7 +37,6 @@ header img {
     left:12.5%;
     width: 75%;
     height: 75%;
-    border: 2px solid black;
 }
 
 button {
@@ -168,7 +167,6 @@ padding-top: 60px;
         left: 5%;
         width: 90%;
         height: 75%;
-        border: 2px solid black;
     }
 
     button {
