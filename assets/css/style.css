@@ -23,8 +23,6 @@ header a {
     font-size: 2rem;
     text-decoration: none;
     text-align: center;
-
-
 }
 
 /*Main content*/
@@ -58,13 +56,13 @@ align-items: center;
 flex-wrap: wrap;
 justify-content: center;
 flex-direction: column;
-gap: 20px;
+gap: 30px;
 height: 50%;
 }
 
 #button-div {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 #button-div button:focus {
@@ -75,9 +73,19 @@ height: 50%;
 #start-div p {
     text-align: left;
     width: 100%;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
     align-self: flex-end;
+}
+
+#start-div label {
+    font-size: x-large;
+}
+
+#start-div input {
+    width: 50%;
+    font-size: x-large;
+    line-height: 25px;
 }
 
 /*Game div*/
@@ -100,34 +108,99 @@ padding-top: 30px;
     margin-top: 20px;
 }
 
-#option-container button {
-    font-size: large;
+#flag {
+    height: 50%;
+    border: 2px solid black;
 }
 
-#flag {
-    height: 40%;
-    border: 2px solid black;
+#score, #score-username {
+    font-size: x-large;
+    font-weight: bold;
 }
 
 /*Result div*/ /*When deploying - display: none;*/
 #result-div {
 display: none;
 text-align: center;
+padding-top: 60px;
 }
 #result-div button {
     font-size: x-large;
+    margin-top: 30px;
 }
 
 #result-message, #final-result {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 /*For tablets*/
 @media screen and (max-width: 991px){
-
+    #start-div, #game-div, #result-div{
+        width: 85%;
+    }
 }
 
 /*For phones*/
 @media screen and (max-width: 767px){
-    
+    /*Header*/
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header a {
+        font-size: 1.2rem;
+    }
+
+    /*Main Content*/
+    #start-div, #game-div, #result-div {
+        position: fixed;
+        right: 5%;
+        left: 5%;
+        width: 90%;
+        height: 75%;
+        border: 2px solid black;
+    }
+
+    button {
+        font-size: large;
+    }
+
+    /*Landing page*/
+    #start-div {
+        align-items: center;
+        justify-content: start;
+        gap: 15px;
+        height: 70%;
+        }
+
+        #start-div p {
+            font-size: large;
+        }
+
+        #start-div label {
+            font-size: large;
+        }
+
+        #start-div input{
+            font-size: large;
+        }
+
+        #button-div{
+            gap: 4px;
+        }
+
+    /*Game page*/
+    #flag {
+        width: 95%;
+        height: auto;
+    }
+
+    #option-container  {
+        flex-wrap: wrap;
+    }
+
+    /*Result page*/
+    #result-message, #final-result {
+        font-size: x-large;
+    }
 }
