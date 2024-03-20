@@ -1,8 +1,10 @@
 /*Add fonts here*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&family=Gabarito:wght@400..900&family=Madimi+One&display=swap');
 
 body {
     background-color: #D7F2BA;
     color: #22333B;
+    font-family: Gabarito, "Madimi One", "Baloo Chettan 2", sans-serif;
 }
 
 /*Header*/
@@ -42,6 +44,7 @@ header img {
 button {
     border-radius: 8%;
     font-size: xx-large;
+    font-family: inherit;
 }
 
 button:hover {
