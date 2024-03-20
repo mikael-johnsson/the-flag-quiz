@@ -39,15 +39,13 @@ header a {
 
 button {
     border-radius: 8%;
-    
-
 }
 
 button:hover {
 box-shadow: 8px 4px 5px #22333B;
 }
 
-button:active {
+button:active, button:focus {
     background-color: #a19b9b;
     box-shadow: 6px 3px 4px #22333B;
 }
