@@ -3,7 +3,7 @@ The Flag Quiz is a place for fun, learning and competition. Test your knowledge 
 
 Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
+Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
 ---
 
@@ -48,8 +48,19 @@ Add a link to the live site here, for Milestone 1 this will be the GitHub Pages 
 👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
 
 ### User Stories
-
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+#### Client Goals
+- Get the users to fully understand the site on the first look
+- To not have any faulty questions
+- Give the user an easy possibility to play the game again 
+- Have the site responsive and working on different devices
+#### First Time Visitor Goals
+- Fully understand the site on the first look
+- Believing the questions being on a level matching the chosen difficulty
+- To have fun and learn
+#### Returning Visitor Goals
+- Getting new questions recurringly
+- Feeling the need to get a better score
+- To have fun and learn
 
 ## Design
 
@@ -57,9 +68,15 @@ Add your user stories here. You want to include first time visitors and returnin
 
 ### Colour Scheme
 
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
+The colour scheme's most important task is to not stand in the way of many different flag colours the user will come upon. The background is therefore "tea green" - a light neutral colour you do not see in any flag.
 
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
+The rest of the palette are suggestions from the colour palette site [coolors.co](https://coolors.co)
+
+Pink is used for header
+
+Dark blue is used for text and button shadows
+
+![Image of the site's colour palette](assets/images/readme/color_palette_flag_quiz.png)
 
 ### Typography
 
@@ -75,15 +92,22 @@ I also like to include an image of the fonts chosen as a reference.
 
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+The only images found on the site are the flags. They are all in scalable png-files, to make them easier to use in a responsive site.
 
 ### Wireframes
 
-Add the images or links for your wireframes here.
+The general idea of the site has from the beginning been easy and clear. The site is only one html-file with hiding and displaying different divs creating the idea of the site being larger than it is.
 
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
+*Landing page*
+![Wireframe of the landing page](assets/images/readme/wireframe_landing_page.png)
 
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
+*Game page*
+![Wireframe of the game page](assets/images/readme/wireframe_game_page.png)
+
+*Result page*
+![Wireframe of the result page](assets/images/readme/wireframe_result_page.png)
+
+
 
 ## Features
 
