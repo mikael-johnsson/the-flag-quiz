@@ -183,6 +183,11 @@ function shuffleQ(question) {
     }
 }
 
+//Fisher Yates shuffle function
+/**
+ * Function used to shuffle the questions
+ * in the chosen difficulty array
+ */
 function shuffleF(flags) {
     for (let i = flags.length -1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i+1));
