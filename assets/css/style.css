@@ -44,6 +44,7 @@ header img {
     left:12.5%;
     width: 75%;
     height: 75%;
+    margin-left: -5%;
 }
 
 button {
@@ -166,6 +167,10 @@ padding-top: 60px;
     #start-div, #game-div, #result-div{
         width: 85%;
     }
+
+    #game-div button {
+        font-size: x-large;
+    }
 }
 
 /*For phones*/
@@ -188,9 +193,10 @@ padding-top: 60px;
     #start-div, #game-div, #result-div {
         position: fixed;
         right: 5%;
-        left: 5%;
-        width: 90%;
+        left: 2%;
+        width: 95%;
         height: 75%;
+        margin-left: 0;
     }
 
     button {
@@ -229,6 +235,11 @@ padding-top: 60px;
 
     #option-container  {
         flex-wrap: wrap;
+    }
+
+    #answer-message {
+        font-size: x-large;
+        padding: 10px;
     }
 
     /*Result page*/
