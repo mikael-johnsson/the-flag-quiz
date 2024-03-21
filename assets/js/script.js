@@ -56,8 +56,12 @@ let flags;
 
 // Wait for DOM to load, then get difficulty input
 document.addEventListener("DOMContentLoaded",function(){
+    let username = document.getElementById("username");
+    username.value = "";
+    username.addEventListener("onchange", displayUsername)
+
+    //Log users button input
     let buttons = this.getElementsByClassName("difficulty-buttons");
-    //let flags;
     for (let button of buttons){
         button.addEventListener("click",function(){
             if (this.getAttribute("id") === "easy-button"){
@@ -66,7 +70,7 @@ document.addEventListener("DOMContentLoaded",function(){
                 flags = moderateFlags;
             } else if (this.getAttribute("id") === "hard-button"){
                 flags = hardFlags;
-            } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username !== "") {
+            } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username.value !== "") {
                 displayUsername();
                 shuffleF(flags)
                 runGame(flags);
@@ -79,8 +83,8 @@ document.addEventListener("DOMContentLoaded",function(){
  * Used to display the username
  */
 function displayUsername(){
-let username = document.getElementById("username").value;
-    document.getElementById("score-username").innerHTML = `${username}'s score:`;
+    username = document.getElementById("username");
+    document.getElementById("score-username").innerHTML = `${username.value}'s score:`;
 }
 /**
  * Displays the game page and 
