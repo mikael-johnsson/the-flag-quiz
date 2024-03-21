@@ -130,10 +130,10 @@ function displayQuestion(flags){
         }
      questionCounter += 1;
      
-        for (var y = 0; y < optionButtons.length; y++) {
+        for (let y = 0; y < optionButtons.length; y++) {
             optionButtons[y].onclick = function() {
 
-            var selectedAnswer = this.innerHTML;
+            let selectedAnswer = this.innerHTML;
             compareAnswer(selectedAnswer, question.name);
          };
         }
