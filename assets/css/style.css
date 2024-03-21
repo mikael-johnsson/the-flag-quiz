@@ -229,8 +229,10 @@ padding-top: 60px;
 
     /*Game page*/
     #flag {
-        width: 95%;
+        width: auto;
         height: auto;
+        max-width: 95%;
+        max-height: 35%;
     }
 
     #option-container  {
@@ -240,6 +242,10 @@ padding-top: 60px;
     #answer-message {
         font-size: x-large;
         padding: 10px;
+    }
+
+    #game-div button {
+        font-size: large;
     }
 
     /*Result page*/
