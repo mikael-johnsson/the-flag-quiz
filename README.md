@@ -1,11 +1,11 @@
 # The Flag Quiz
 The Flag Quiz is a place for fun, learning and competition. Test your knowledge of flags from all around the world.
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
-
 Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
----
+![Image of the site on different devices](assets/images/readme/flag_quiz_responsiveness.png)
+
+
 
 ## CONTENTS
 
@@ -45,8 +45,6 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
-
 ### User Stories
 #### Client Goals
 - Get the users to fully understand the site on the first look
@@ -64,8 +62,6 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
 ## Design
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
-
 ### Colour Scheme
 
 The colour scheme's most important task is to not stand in the way of many different flag colours the user will come upon. The background is therefore "tea green" - a light neutral colour you do not see in any flag.
@@ -76,19 +72,22 @@ Pink is used for header
 
 Dark blue is used for text and button shadows
 
-![Image of the site's colour palette](assets/images/readme/color_palette_flag_quiz.png)
+![Image of the site's colour palette](assets/images/readme/color_palette_2.png)
 
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+Fonts are imported from Google Fonts. The font used in first hand is *Gabarito*. It is a sans-serif font well suited for the web. Even though the lines har sharp, it has a subtle smoothness to it which goes well with the soft colours.
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
+The font is used all over the site. In some places the text is bold, but for most of the site the regular font is used.
 
-I also like to include an image of the fonts chosen as a reference.
+*The h1-heading*
 
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
+![Image of the font used in the h1-heading](assets/images/readme/font_h1.png)
+
+*One of the paragraphs*
+
+![Image of the font used in the paragraphs](assets/images/readme/font_p.png)
+
 
 ### Imagery
 
@@ -99,106 +98,129 @@ The only images found on the site are the flags. They are all in scalable png-fi
 The general idea of the site has from the beginning been easy and clear. The site is only one html-file with hiding and displaying different divs creating the idea of the site being larger than it is.
 
 *Landing page*
+
 ![Wireframe of the landing page](assets/images/readme/wireframe_landing_page.png)
 
 *Game page*
+
 ![Wireframe of the game page](assets/images/readme/wireframe_game_page.png)
 
 *Result page*
+
 ![Wireframe of the result page](assets/images/readme/wireframe_result_page.png)
 
 
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
-
-This section can be used to explain what pages your site is made up of.
-
 ### General features on each page
+#### Header
+The header is simple; only containing a h1-heading, a "Home"-link and an icon, the same on used as a favicon.
+#### Landing page
+The first content that is presented to the user are the simple instructions of "Choose a difficulty! Connect the flag to a country! Compete & learn!". By now the user should understand what the game is about and what the site's purpose is.
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+The user get the chance (or obligation) to submit a username. The user can not start a game without one. The username will return later on in the game.
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+They then have the chance to select difficulty; ease, moderate or hard.
+
+When username and difficulty is chosen the only thing left is to click the big button to start the game.
+#### Game page
+The game is simple. A flag of a country in the world is displayed. Below it five option buttons with different countries are displayed. If the user choose correctly, they will get att green message congratulating them and the score will increment by one. They will know it is their score since their username is next to it.
+
+If the wrong option is clicked, the message will appear red with information of what the correct answer should have been.
+
+The game goes on for 10 rounds.
+#### Result page
+When the game is over the user is presented with a message telling them how they went on, inluding the final score. They instantly get a chance to play the game again by clicking the button saying "Try again?" 
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+Wanted implementations are:
+- Highscore list (at first local, but preferebly global)
+- An automatic solution to add more flags
+- An inverted game mode, where a country's name is displayed and the options are different flags.
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
-
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
 
 ## Technologies Used
 
 👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 
 ### Languages Used
-
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+This website was created by using HTML, CSS and Javascript.
 
 ### Frameworks, Libraries & Programs Used
+Google Fonts - For fonts
 
-Add any frameworks, libraries or programs used while creating your project.
+Git - For version control
 
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
+Github - To save & store files and deployment
 
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+Gitpod - IDE used to write the code
+
+Favicon - For icon in header and favicon
+
+Balsamiq - For wireframes
 
 ## Deployment & Local Development
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
-
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+Github pages is used to deploy this site. To deploy the site yourself, follow these instructions:
+
+- Sign in to Github
+- Go to the repository for this project called [*the-flag-quiz*](https://github.com/mikael-johnsson/the-flag-quiz)
+- Click *settings*
+- In the column to the left, click *pages*
+- From the dropdown, select *main branch* and then save
+- The site is now deployed!
 
 ### Local Development
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
 #### How to Fork
 
-Place instructions on how to fork your project here.
+To fork the repository:
+
+- Log in to Github
+
+- Go to the repository for this project called *the-flag-quiz*
+
+- Click the Fork button in the top right corner
 
 #### How to Clone
 
-Place instructions on how to clone your project here.
+- Log in (or sign up) to GitHub.
+
+- Go to the repository for this project, [*the-flag-quiz*](https://github.com/mikael-johnsson/the-flag-quiz).
+
+- Click *Code* and choose whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link.
+
+- Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+
+- Type the following command in the terminal (after the git clone you will need to paste the link you copied in step 3 above):
+
+      git clone { & THE LINK FROM STEP 3 }
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](TESTING.md)
+Find the link to the testing made for this site [here](TESTING.md)
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-
-The Credits section is where you can credit all the people and sources you used throughout your project.
-
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+- The updateScore function used is from Code Institute's *Love Maths* project.
 
-### Content
+- The solution to the bug in the compareAnswer function was created by the Stack Overflow user *dfsq*
 
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
+- To shuffle both the questions and the options The *Fisher-Yates shuffle* function was used.
 
 ###  Media
 
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
+All of the flags are from the site [*flagpedia.net*](https://flagpedia.net
+)
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+Graeme
