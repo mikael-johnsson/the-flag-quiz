@@ -146,9 +146,15 @@ function compareAnswer(selectedAnswer, correctAnswer){
     if (selectedAnswer === correctAnswer){
         updateScore();
         document.getElementById("answer-message").style.display ="block";
-        setTimeout("hideMessageC()", 1800)
+        document.getElementById("answer-message").innerHTML = `${correctAnswer} was correct!`;
+        document.getElementById("answer-message").style.backgroundColor ="#22333B";
+        setTimeout("hideMessage()", 1800)
     } else if (selectedAnswer !== correctAnswer){ 
-        alert("You were wrong!");
+        document.getElementById("answer-message").style.display ="block";
+        document.getElementById("answer-message").innerHTML = `Sorry, ${correctAnswer} <br>was the correct answer!`;
+        document.getElementById("answer-message").style.backgroundColor ="#601700";
+        //document.getElementById("answer-message").style.width ="fit-content";
+        setTimeout("hideMessage()", 1800)
     } else {
         alert("Something weird happened")
     }
@@ -165,8 +171,8 @@ function updateScore(){
     document.getElementById("score").innerText = ++oldScore;
 
 }
-//To hide message (if correct) after 1.8 seconds
-function hideMessageC() {
+//To hide answer message after 1.8 seconds
+function hideMessage() {
     document.getElementById("answer-message").style.display ="none";
 }
     
