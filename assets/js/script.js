@@ -145,7 +145,8 @@ function displayQuestion(flags){
 function compareAnswer(selectedAnswer, correctAnswer){
     if (selectedAnswer === correctAnswer){
         updateScore();
-        alert("You were correct!");
+        document.getElementById("answer-message").style.display ="block";
+        setTimeout("hideMessageC()", 1800)
     } else if (selectedAnswer !== correctAnswer){ 
         alert("You were wrong!");
     } else {
@@ -164,6 +165,11 @@ function updateScore(){
     document.getElementById("score").innerText = ++oldScore;
 
 }
+//To hide message (if correct) after 1.8 seconds
+function hideMessageC() {
+    document.getElementById("answer-message").style.display ="none";
+}
+    
 
 /**
  * Displays the Result page

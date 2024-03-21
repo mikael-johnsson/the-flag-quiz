@@ -129,6 +129,17 @@ padding-top: 30px;
     font-weight: bold;
 }
 
+#answer-message {
+    display: none;
+    font-size: xxx-large;
+    font-weight: bold;
+    text-align:center;
+    margin: -10px auto;
+    width: 20%;
+    background-color: #22333B;
+    color: #D7F2BA;
+}
+
 /*Result div*/ /*When deploying - display: none;*/
 #result-div {
 display: none;
