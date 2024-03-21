@@ -16,7 +16,7 @@ let easyFlags = [
     {name: "Finland", flag: "assets/images/flags-easy/finland.png", answers: ["Finland", "Latvia", "Spain", "Mexico", "China"]},
     {name: "Ireland", flag: "assets/images/flags-easy/ireland.png", answers: ["Ireland", "United States", "Switzerland", "Italy", "Argentina"]},
     {name: "Latvia", flag: "assets/images/flags-easy/latvia.png", answers: ["Latvia", "Morocco", "Netherlands", "Czech Republic", "Canada"]},
-    {name: "Morocco", flag: "assets/images/flags-easy/marocco.png", answers: ["Morocco", "Netherlands", "South Africa", "France", "Austria"]},
+    {name: "Morocco", flag: "assets/images/flags-easy/morocco.png", answers: ["Morocco", "Netherlands", "South Africa", "France", "Austria"]},
     {name: "Netherlands", flag: "assets/images/flags-easy/netherlands.png", answers: ["Netherlands", "Norway", "Spain", "Argentina", "China"]},
     {name: "Norway", flag: "assets/images/flags-easy/norway.png", answers: ["Norway", "South Africa", "Japan", "China", "Ireland"]},
     {name: "South Africa", flag: "assets/images/flags-easy/south_africa.png", answers: ["South Africa", "Switzerland", "Cyprus", "Denmark", "Finland"]},
