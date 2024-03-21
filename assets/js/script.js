@@ -94,6 +94,7 @@ function displayUsername(){
     username = document.getElementById("username");
     document.getElementById("score-username").innerHTML = `${username.value}'s score:`;
 }
+
 /**
  * Displays the game page and 
  * counts if the game is over or not
@@ -110,6 +111,7 @@ function runGame(flags) {
         endMessage();
     }
 }
+
 /**
  * Displays flag and options.
  * Logs the users selected answer
@@ -153,7 +155,6 @@ function compareAnswer(selectedAnswer, correctAnswer){
         document.getElementById("answer-message").style.display ="block";
         document.getElementById("answer-message").innerHTML = `Sorry, ${correctAnswer} <br>was the correct answer!`;
         document.getElementById("answer-message").style.backgroundColor ="#601700";
-        //document.getElementById("answer-message").style.width ="fit-content";
         setTimeout("hideMessage()", 1800)
     } else {
         alert("Something weird happened")
@@ -169,13 +170,12 @@ function compareAnswer(selectedAnswer, correctAnswer){
 function updateScore(){
     let oldScore = parseInt(document.getElementById("score").innerHTML);
     document.getElementById("score").innerText = ++oldScore;
-
 }
+
 //To hide answer message after 1.8 seconds
 function hideMessage() {
     document.getElementById("answer-message").style.display ="none";
 }
-    
 
 /**
  * Displays the Result page
