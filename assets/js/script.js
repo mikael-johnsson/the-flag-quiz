@@ -98,11 +98,7 @@ function runGame(flags) {
         endMessage();
 
     }
-    
-    
-
 }
-
 /**
  * Displays flag and options.
  * Logs the users selected answer
@@ -125,23 +121,6 @@ function displayQuestion(flags){
         }
      questionCounter += 1;
      
-     //to log which answer the user selects
-     //let selectedAnswer = "";
-    // for (let x of optionButtons){
-   // x.addEventListener("click", function(){
-    //    selectedAnswer = this.innerHTML;
-     //   console.log(this.innerHTML)
-     //   if (selectedAnswer !== ""){
-    //        compareAnswer(selectedAnswer, question.name); 
-    //    }
-    //    selectedAnswer = "";
-    //})
-        /*if (selectedAnswer){
-            break;
-        }  compareAnswer(selectedAnswer, question.name);*/
-    // }
-
-     
         for (var y = 0; y < optionButtons.length; y++) {
             optionButtons[y].onclick = function() {
 
@@ -149,16 +128,12 @@ function displayQuestion(flags){
             compareAnswer(selectedAnswer, question.name);
          };
         }
-
-     //console.log(selectedAnswer)
-     
 }
 /**
  * Compare the users selected answer 
  * to the correct answer
  */
 function compareAnswer(selectedAnswer, correctAnswer){
-    console.log("hello")
     if (selectedAnswer === correctAnswer){
         updateScore();
         alert("You were correct!");
