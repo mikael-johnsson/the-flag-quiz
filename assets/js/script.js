@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded",function(){
                 flags = hardFlags;
             } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username !== "") {
                 displayUsername();
+                shuffleF(flags)
                 runGame(flags);
             } else alert("Have you chosen difficulty and a username?");
         } )
@@ -89,14 +90,12 @@ function runGame(flags) {
     //To display the game-div
     document.getElementById("start-div").style.display = "none";
     document.getElementById("game-div").style.display = "block";
-    console.log(questionCounter);
-    //Question counter
     
+    //Question counter
     if (questionCounter < 10){
         displayQuestion(flags);
-    }  else { 
+    } else {
         endMessage();
-
     }
 }
 /**
@@ -104,15 +103,13 @@ function runGame(flags) {
  * Logs the users selected answer
  */
 function displayQuestion(flags){
-     //To generate flag
-     let randomNumber = Math.floor(Math.random() * flags.length);
-     console.log("randomNumber", randomNumber);
-     let question = flags[randomNumber];
-     document.getElementById("flag").src = question.flag; //correct answer is now in question.name
-    
-    
+     /*To generate flag. The flag array is shuffled each game
+     questionCounter determines which index is presented*/
+    let question = flags[questionCounter]
+    document.getElementById("flag").src = question.flag;
+  
      //to generate options in shuffled order
-     shuffle(question);
+     shuffleQ(question);
      let optionButtons = document.getElementsByClassName("option");
      let i = 0;
      while (i <= 4){
@@ -177,11 +174,20 @@ function endMessage(){
  * Function used to shuffle the options
  * on the option buttons
  */
-function shuffle(question) {
+function shuffleQ(question) {
     for (let i = question.answers.length -1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i+1));
       let k = question.answers[i];
       question.answers[i] = question.answers[j];
       question.answers[j] = k;
+    }
+}
+
+function shuffleF(flags) {
+    for (let i = flags.length -1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i+1));
+      let k = flags[i];
+      flags[i] = flags[j];
+      flags[j] = k;
     }
 }
