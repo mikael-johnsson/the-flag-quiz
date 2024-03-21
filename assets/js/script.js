@@ -1,52 +1,77 @@
 
 // Flag arrays
 let easyFlags = [
-    {name: "Argentina", flag: "assets/images/flags-easy/argentina.png", answers:["Argentina", "Mexico", "China", "Japan", "Canada"]},
-    {name: "Austria", flag: "assets/images/flags-easy/austria.png", answers:["Austria", "China", "Italy", "France", "Canada"]},
-    {name: "Brazil", flag: "assets/images/flags-easy/brazil.png", answers:["Brazil", "Mexico", "Czech Republic", "Japan", "Canada"]},
-    {name: "Canada", flag: "assets/images/flags-easy/canada.png", answers:["Canada", "Argentina", "Austria", "Czech Republic", "Brazil"]},
-    {name: "China", flag: "assets/images/flags-easy/china.png", answers:["China", "France", "Italy", "Japan", "Canada"]},
+    {name: "Argentina", flag: "assets/images/flags-easy/argentina.png", answers:["Argentina", "Mexico", "China", "Latvia", "Canada"]},
+    {name: "Austria", flag: "assets/images/flags-easy/austria.png", answers:["Austria", "China", "Italy", "France", "Morocco"]},
+    {name: "Brazil", flag: "assets/images/flags-easy/brazil.png", answers:["Brazil", "Latvia", "Czech Republic", "Japan", "Canada"]},
+    {name: "Canada", flag: "assets/images/flags-easy/canada.png", answers:["Canada", "Argentina", "Austria", "Czech Republic", "Ireland"]},
+    {name: "China", flag: "assets/images/flags-easy/china.png", answers:["China", "France", "Italy", "Denmark", "Canada"]},
     {name: "Czech Republic", flag: "assets/images/flags-easy/czech_republic.png", answers:["Czech Republic", "Canada", "Argentina", "Austria", "Italy"]},
     {name: "France", flag: "assets/images/flags-easy/france.png", answers: ["France", "Brazil", "Mexico", "Argentina", "Austria"]},
-    {name: "Italy", flag: "assets/images/flags-easy/italy.png", answers: ["Italy", "Mexico", "Japan", "China", "Brazil"]},
+    {name: "Italy", flag: "assets/images/flags-easy/italy.png", answers: ["Italy", "Switzerland", "Japan", "China", "Brazil"]},
     {name: "Japan", flag: "assets/images/flags-easy/japan.png", answers: ["Japan", "Czech Republic", "Italy", "France", "Brazil"]},
-    {name: "Mexico", flag: "assets/images/flags-easy/mexico.png", answers: ["Mexico", "France", "Czech Republic", "China", "Austria"]}
+    {name: "Mexico", flag: "assets/images/flags-easy/mexico.png", answers: ["Mexico", "France", "Czech Republic", "Netherlands", "Austria"]},
+    {name: "Cyprus", flag: "assets/images/flags-easy/cyprus.png", answers: ["Cyprus", "Denmark", "Ireland", "Canada", "Switzerland"]},
+    {name: "Denmark", flag: "assets/images/flags-easy/denmark.png", answers: ["Denmark", "Finland", "Latvia", "Norway", "Brazil"]},
+    {name: "Finland", flag: "assets/images/flags-easy/finland.png", answers: ["Finland", "Latvia", "Spain", "Mexico", "China"]},
+    {name: "Ireland", flag: "assets/images/flags-easy/ireland.png", answers: ["Ireland", "United States", "Switzerland", "Italy", "Argentina"]},
+    {name: "Latvia", flag: "assets/images/flags-easy/latvia.png", answers: ["Latvia", "Morocco", "Netherlands", "Czech Republic", "Canada"]},
+    {name: "Morocco", flag: "assets/images/flags-easy/marocco.png", answers: ["Morocco", "Netherlands", "South Africa", "France", "Austria"]},
+    {name: "Netherlands", flag: "assets/images/flags-easy/netherlands.png", answers: ["Netherlands", "Norway", "Spain", "Argentina", "China"]},
+    {name: "Norway", flag: "assets/images/flags-easy/norway.png", answers: ["Norway", "South Africa", "Japan", "China", "Ireland"]},
+    {name: "South Africa", flag: "assets/images/flags-easy/south_africa.png", answers: ["South Africa", "Switzerland", "Cyprus", "Denmark", "Finland"]},
+    {name: "Spain", flag: "assets/images/flags-easy/spain.png", answers: ["Spain", "United States", "Switzerland", "Finland", "Morocco"]},
+    {name: "Switzerland", flag: "assets/images/flags-easy/switzerland.png", answers: ["Switzerland", "United States", "Ireland", "Cyprus", "Japan"]},
+    {name: "United States", flag: "assets/images/flags-easy/united_states.png", answers: ["United States", "Spain", "Denmark", "Mexico", "Italy"]}
 ];
 
 let moderateFlags = [
-    {name: "Belgium", flag: "assets/images/flags-mid/belgium.png", answers:["Belgium", "Ghana", "Lithuania", "Romania", "South Korea"]},
+    {name: "Belgium", flag: "assets/images/flags-mid/belgium.png", answers:["Belgium", "Ghana", "Estonia", "Hungary", "South Korea"]},
     {name: "Georgia", flag: "assets/images/flags-mid/georgia.png", answers:["Georgia", "Jamaica", "Nigeria", "Portugal", "Romania"]},
-    {name: "Ghana", flag: "assets/images/flags-mid/ghana.png", answers:["Ghana", "Belgium", "Philippines", "Vietnam", "Uruguay"]},
-    {name: "Jamaica", flag: "assets/images/flags-mid/jamaica.png", answers:["Jamaica", "Thailand", "Portugal", "Georgia", "Slovakia"]},
+    {name: "Ghana", flag: "assets/images/flags-mid/ghana.png", answers:["Ghana", "Belgium", "Philippines", "Andorra", "Uruguay"]},
+    {name: "Jamaica", flag: "assets/images/flags-mid/jamaica.png", answers:["Jamaica", "Thailand", "Portugal", "Croatia", "Slovakia"]},
     {name: "Lithuania", flag: "assets/images/flags-mid/lithuania.png", answers:["Lithuania", "Tunisia", "Nigeria", "Romania", "South Korea"]},
     {name: "Nigeria", flag: "assets/images/flags-mid/nigeria.png", answers:["Nigeria", "Philippines", "Portugal", "Thailand", "Uruguay"]},
     {name: "Philippines", flag: "assets/images/flags-mid/philippines.png", answers:["Philippines", "Tunisia", "Lithuania", "Slovakia", "Tunisia"]},
-    {name: "Portugal", flag: "assets/images/flags-mid/portugal.png", answers:["Portugal", "Belgium", "Ghana", "Slovakia", "Vietnam"]},
+    {name: "Portugal", flag: "assets/images/flags-mid/portugal.png", answers:["Portugal", "Belgium", "Ghana", "Andorra", "Vietnam"]},
     {name: "Romania", flag: "assets/images/flags-mid/romania.png", answers:["Romania", "Jamaica", "Georgia", "South Korea", "Thailand"]},
     {name: "Slovakia", flag: "assets/images/flags-mid/slovakia.png", answers:["Slovakia", "Belgium", "Georgia", "Nigeria", "Philippines"]},
     {name: "South Korea", flag: "assets/images/flags-mid/south_korea.png", answers:["South Korea", "Vietnam", "Uruguay", "Nigeria", "Lithuania"]},
     {name: "Thailand", flag: "assets/images/flags-mid/thailand.png", answers:["Thailand", "Jamaica", "Ghana", "Belgium", "Lithuania"]},
     {name: "Tunisia", flag: "assets/images/flags-mid/tunisia.png", answers:["Tunisia", "Vietnam", "Uruguay", "Slovakia", "Romania"]},
     {name: "Uruguay", flag: "assets/images/flags-mid/uruguay.png", answers:["Uruguay", "Portugal", "South Korea", "Thailand", "Jamaica"]},
-    {name: "Vietnam", flag: "assets/images/flags-mid/vietnam.png", answers:["Vietnam", "Tunisia", "Philippines", "Ghana", "Georgia"]}
+    {name: "Vietnam", flag: "assets/images/flags-mid/vietnam.png", answers:["Vietnam", "Tunisia", "Philippines", "Ghana", "Georgia"]},
+    {name: "Algeria", flag: "assets/images/flags-mid/algeria.png", answers: ["Algeria", "Andorra", "Bangladesh", "Ghana", "Portugal"]},
+    {name: "Andorra", flag: "assets/images/flags-mid/andorra.png", answers: ["Andorra", "Bangladesh", "Thailand", "Tunisia", "Romania"]},
+    {name: "Bangladesh", flag: "assets/images/flags-mid/bangladesh.png", answers: ["Bangladesh", "Hungary", "Vietnam", "Jamaica", "Belgium"]},
+    {name: "Belarus", flag: "assets/images/flags-mid/belarus.png", answers: ["Belarus", "Croatia", "South Korea", "Slovakia", "Philippines"]},
+    {name: "Croatia", flag: "assets/images/flags-mid/croatia.png", answers: ["Croatia", "Estonia", "Andorra", "Nigeria", "Georgia"]},
+    {name: "Estonia", flag: "assets/images/flags-mid/estonia.png", answers: ["Estonia", "Hungary", "Algeria", "Tunisia", "Portugal"]},
+    {name: "Hungary", flag: "assets/images/flags-mid/hungary.png", answers: ["Hungary", "Belgium", "Jamaica", "Philippines", "Tunisia"]}
 ]
 
 let hardFlags = [
-    {name: "Armenia", flag: "assets/images/flags-hard/armenia.png", answers:["Armenia", "Ethiopia", "Gabon", "Guatemala", "Ivory Coast"]},
+    {name: "Armenia", flag: "assets/images/flags-hard/armenia.png", answers:["Armenia", "Ethiopia", "Gabon", "Hong Kong", "Ivory Coast"]},
     {name: "Ethiopia", flag: "assets/images/flags-hard/ethiopia.png", answers:["Ethiopia", "Kazakhstan", "Kenya", "Pakistan", "Panama"]},
     {name: "Faroe Islands", flag: "assets/images/flags-hard/faroe_islands.png", answers:["Faroe Islands", "Somalia", "Vatican City", "Venezuela", "Gibraltar"]},
-    {name: "Gabon", flag: "assets/images/flags-hard/gabon.png", answers:["Gabon", "Armenia", "Guatemala", "Somalia", "Sri Lanka"]},
-    {name: "Gibraltar", flag: "assets/images/flags-hard/gibraltar.png", answers:["Gibraltar", "Ivory Coast", "Kazakhstan", "Kenya", "Vatican City"]},
+    {name: "Gabon", flag: "assets/images/flags-hard/gabon.png", answers:["Gabon", "Armenia", "Jordan", "Somalia", "Sri Lanka"]},
+    {name: "Gibraltar", flag: "assets/images/flags-hard/gibraltar.png", answers:["Gibraltar", "Azerbaijan", "Bhutan", "Kenya", "Vatican City"]},
     {name: "Guatemala", flag: "assets/images/flags-hard/guatemala.png", answers:["Guatemala", "Ethiopia", "Faroe Islands", "Gibraltar", "Panama"]},
     {name: "Ivory Coast", flag: "assets/images/flags-hard/ivory_coast.png", answers:["Ivory Coast", "Armenia", "Faroe Islands", "Pakistan", "Sri Lanka"]},
-    {name: "Kazakhstan", flag: "assets/images/flags-hard/kazakhstan.png", answers:["Kazakhstan", "Venezuela", "Armenia", "Gabon", "Gibraltar"]},
-    {name: "Kenya", flag: "assets/images/flags-hard/kenya.png", answers:["Kenya", "Guatemala", "Pakistan", "Kazakhstan", "Vatican City"]},
+    {name: "Kazakhstan", flag: "assets/images/flags-hard/kazakhstan.png", answers:["Kazakhstan", "Venezuela", "Armenia", "Afghanistan", "Gibraltar"]},
+    {name: "Kenya", flag: "assets/images/flags-hard/kenya.png", answers:["Kenya", "Guatemala", "Azerbaijan", "Kazakhstan", "Vatican City"]},
     {name: "Pakistan", flag: "assets/images/flags-hard/pakistan.png", answers:["Pakistan", "Venezuela", "Sri Lanka", "Somalia", "Panama"]},
     {name: "Panama", flag: "assets/images/flags-hard/panama.png", answers:["Panama", "Kenya", "Ivory Coast", "Gabon", "Ethiopia"]},
     {name: "Somalia", flag: "assets/images/flags-hard/somalia.png", answers:["Somalia", "Faroe Islands", "Gibraltar", "Vatican City", "Venezuela"]},
     {name: "Sri Lanka", flag: "assets/images/flags-hard/sri_lanka.png", answers:["Sri Lanka", "Armenia", "Kazakhstan", "Ethiopia", "Panama"]},
     {name: "Vatican City", flag: "assets/images/flags-hard/vatican_city.png", answers:["Vatican City", "Guatemala", "Gabon", "Ivory Coast", "Kenya"]},
-    {name: "Venezuela", flag: "assets/images/flags-hard/venezuela.png", answers:["Venezuela", "Sri Lanka", "Somalia", "Pakistan", "Faroe Islands"]}
+    {name: "Venezuela", flag: "assets/images/flags-hard/venezuela.png", answers:["Venezuela", "Sri Lanka", "Somalia", "Pakistan", "Faroe Islands"]},
+    {name: "Afghanistan", flag: "assets/images/flags-hard/afghanistan.png", answers: ["Afghanistan", "Azerbaijan", "Venezuela", "Somalia", "Panama"]},
+    {name: "Azerbaijan", flag: "assets/images/flags-hard/azerbaijan.png", answers: ["Azerbaijan", "Bahrain", "Armenia", "Gibraltar", "Pakistan"]},
+    {name: "Bahrain", flag: "assets/images/flags-hard/bahrain.png", answers: ["Bahrain", "Bhutan", "Vatican City", "Somalia", "Kenya"]},
+    {name: "Bhutan", flag: "assets/images/flags-hard/bhutan.png", answers: ["Bhutan", "Hong Kong", "Gabon", "Faroe Islands", "Ethiopia"]},
+    {name: "Hong Kong", flag: "assets/images/flags-hard/hongkong.png", answers: ["Hong Kong", "Jordan", "Afghanistan", "Somalia", "Ivory Coast"]},
+    {name: "Jordan", flag: "assets/images/flags-hard/jordan.png", answers: ["Jordan", "Guatemala", "Bhutan", "Kazakhstan", "Guatemala"]}
 ]
 // global variable to help runGame
 let questionCounter = 0;
