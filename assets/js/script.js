@@ -183,14 +183,21 @@ function hideMessage() {
  * and the final score
  */
 function endMessage(){
-    alert("The Game is Over");
     // Display result div
     document.getElementById("game-div").style.display = "none";
     document.getElementById("result-div").style.display = "block";
 
     //Display end message
-    let finalResult = document.getElementById("score").innerText
-    document.getElementById("result-message").innerHTML = `Great job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`
+    let finalResult = parseInt(document.getElementById("score").innerText)
+    console.log(finalResult)
+    if (finalResult === 10){
+        document.getElementById("result-message").innerHTML = `Wow! Terriffic job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`
+    } else if(finalResult < 10 && finalResult > 5) {
+        document.getElementById("result-message").innerHTML = `God job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`
+    } else {
+        document.getElementById("result-message").innerHTML = `You did your best, ${username.value}.<br>You played on ${difficulty} <br>and got ${finalResult} correct answers.`
+    }
+   
 }
 
 //Fisher Yates shuffle function
