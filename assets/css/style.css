@@ -70,7 +70,7 @@ flex-wrap: wrap;
 justify-content: center;
 flex-direction: column;
 gap: 30px;
-height: 50%;
+height: fit-content;
 }
 
 #button-div {
@@ -83,12 +83,20 @@ height: 50%;
     box-shadow: 6px 3px 4px #22333B;
 }
 
-#start-div p {
+#intro-text {
     text-align: left;
     width: 100%;
     font-size: xx-large;
     text-align: center;
     align-self: flex-end;
+}
+
+#error-message {
+    display: none;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    color: #601700;
 }
 
 #start-div label {

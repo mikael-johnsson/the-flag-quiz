@@ -82,7 +82,11 @@ document.addEventListener("DOMContentLoaded",function(){
                 displayUsername();
                 shuffleF(flags)
                 runGame(flags);
-            } else alert("Have you chosen difficulty and a username?");
+            } else {
+                document.getElementById("error-message").style.display = "block";
+                
+                
+            }
         } )
     }
 })
