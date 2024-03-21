@@ -44,7 +44,7 @@ header img {
     left:12.5%;
     width: 75%;
     height: 75%;
-    margin-left: -5%;
+    
 }
 
 button {
@@ -166,6 +166,7 @@ padding-top: 60px;
 @media screen and (max-width: 991px){
     #start-div, #game-div, #result-div{
         width: 85%;
+        margin-left: -5%;
     }
 
     #game-div button {
