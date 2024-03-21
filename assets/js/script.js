@@ -54,8 +54,13 @@ let questionCounter = 0;
 // variable containing all of the chosen flags during the game
 let flags;
 
-// Wait for DOM to load, then get difficulty input
+//variable containing chose difficulty for endMessage()
+let difficulty;
+
+// Wait for DOM to load, get username input and then get difficulty input
 document.addEventListener("DOMContentLoaded",function(){
+    /*log username input and 
+    make sure you cannot play game without it */
     let username = document.getElementById("username");
     username.value = "";
     username.addEventListener("onchange", displayUsername)
@@ -66,10 +71,13 @@ document.addEventListener("DOMContentLoaded",function(){
         button.addEventListener("click",function(){
             if (this.getAttribute("id") === "easy-button"){
                 flags = easyFlags;
+                difficulty = "easy";
             } else if (this.getAttribute("id") === "moderate-button"){
                 flags = moderateFlags;
+                difficulty = "moderate";
             } else if (this.getAttribute("id") === "hard-button"){
                 flags = hardFlags;
+                difficulty = "hard";
             } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username.value !== "") {
                 displayUsername();
                 shuffleF(flags)
@@ -170,7 +178,7 @@ function endMessage(){
 
     //Display end message
     let finalResult = document.getElementById("score").innerText
-    document.getElementById("result-message").innerHTML = `Great job ${username.value}!\nYou got ${finalResult} correct answers!`
+    document.getElementById("result-message").innerHTML = `Great job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`
 }
 
 //Fisher Yates shuffle function
