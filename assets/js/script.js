@@ -170,12 +170,12 @@ function compareAnswer(selectedAnswer, correctAnswer){
         document.getElementById("answer-message").style.display ="block";
         document.getElementById("answer-message").innerHTML = `${correctAnswer} was correct!`;
         document.getElementById("answer-message").style.backgroundColor ="#22333B";
-        setTimeout(hideMessage(), 1800);
+        setTimeout(hideMessage, 1800);
     } else if (selectedAnswer !== correctAnswer){ 
         document.getElementById("answer-message").style.display ="block";
         document.getElementById("answer-message").innerHTML = `Sorry, ${correctAnswer} <br>was the correct answer!`;
         document.getElementById("answer-message").style.backgroundColor ="#601700";
-        setTimeout(hideMessage(), 1800);
+        setTimeout(hideMessage, 1800);
         }
     selectedAnswer ="";
     runGame(flags);
