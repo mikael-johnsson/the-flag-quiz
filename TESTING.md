@@ -29,47 +29,32 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
 ###  W3C Validator
 
-👩🏻‍💻 View an example of a completed W3C HTML & CSS validation section [here](https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#W3C-Validator)
+#### HTML
+The HTML code was validated through the W3C validator via direct input. It came out with no errors.
 
-The most popular HTML validator is [W3C](https://validator.w3.org/). There are two ways to validate the HTML for your first milestone - you can copy the live link for your site page and paste into the validate by URI field, or you can copy all the code for your page and paste this into the validate by direct input field.
+![Screenshot of the "no error-message" from W3C Validator](assets/images/readme/html_validation.png)
 
-#### **URI Input**
+#### CSS
+The CSS code was validated through the W3C validator via direct input. It came out with one error. It warned that it did not validate external stylesheets, in this case the imported Google Fonts.
 
-If you validate with your sites URL, you can run the validation and then copy the link from the address bar and insert the link here as your proof of validation.
-
-![W3C URI Validator](documentation/milestone1-testing/w3c-uri-validatation.png)
-
-#### **Direct Input**
-
-If you validate with the code, you will need to screenshot the validation results and then link the image here.
-
-![W3C Direct Input Validator](documentation/milestone1-testing/w3c-directinput-validation.png)
-
-#### **CSS Validation**
-
-CSS Validation can only be done by copying and pasting the CSS file contents into the direct input. Make sure that the checkbox for CSS is selected.
-
-![W3C CSS Validation](documentation/milestone1-testing/w3c-css-validation.png)
-
+![Screenshot of the "error-message" from W3C Validator](assets/images/readme/css_validation.png)
 ### Lighthouse
+The site is also validated through Lighthouse. The validator tests: Performance, Accessibiltiy, Best Practices and SEO.
+#### Desktop
+On desktop version the site scored 100, 100, 100 and 92.
 
-👩🏻‍💻 View an example of a completed lighthouse testing section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022/blob/main/TESTING.md#Lighthouse)
+![Screenshot of the lighthouse score for desktop](assets/images/readme/lighthouse_desktop_start.png)
 
-Lighthouse Testing is part of the Chrome Developer Tools. For more information on how to use this tool, please visit [chrome Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en#:~:text=Lighthouse%20is%20an%20open%2Dsource,how%20well%20the%20page%20did.).
+#### Mobile
+On mobile version the site scored 92, 92, 100, 92.
 
-You will need to run the Lighthouse testing on each individual page of your site, for desktop as a minimum. If you have time it would be great to also add in the mobile testing.
-
-![Lighthouse Testing](documentation/milestone1-testing/lighthouse.png)
+![Screenshot of the lighthouse score for mobile](assets/images/readme/lighthouse_mobile.png)
 
 ### WAVE
+For additional accessibility testing, WAVE has been used to test the site. It rendered three "alerts" indicating that a few paragraph elements should be changed into headings.
 
-👩🏻‍💻 View an example of a completed WAVE testing section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022/blob/main/TESTING.md#WAVE)
+![Screenshot of the WAVE testing](assets/images/readme/wave_validation.png)
 
-[WAVE](https://wave.webaim.org/) is an accessibility testing tool. I like to run this on each page of my site and take a screenshot of the results to add here. They have a website for testing and a Chrome extension.
-
-![Wave Desktop](documentation/milestone1-testing/wave-desktop.png)
-
-![Wave Exetension](documentation/milestone1-testing/wqave-extension.png)
 
 ## MANUAL TESTING
 
