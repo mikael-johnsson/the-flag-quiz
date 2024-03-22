@@ -15,7 +15,7 @@ header {
     height: fit-content;
     align-items: center;
     background-color: #CE7DA5;
-    margin: -8px -8px 0 -8px; 
+    margin: -8px -8px 0 -8px;
 }
 
 h1 {
@@ -39,13 +39,15 @@ header img {
 }
 
 /*Main content*/
-#start-div, #game-div, #result-div {
+#start-div,
+#game-div,
+#result-div {
     position: fixed;
-    right:12.5%;
-    left:12.5%;
+    right: 12.5%;
+    left: 12.5%;
     width: 75%;
     height: 75%;
-    
+
 }
 
 button {
@@ -56,7 +58,7 @@ button {
 }
 
 button:hover {
-box-shadow: 8px 4px 5px #22333B;
+    box-shadow: 8px 4px 5px #22333B;
 }
 
 button:active {
@@ -64,15 +66,16 @@ button:active {
     box-shadow: 6px 3px 4px #22333B;
 }
 
-/*Start div*/ /*When deploying - display: flex;*/
+/*Start div*/
+/*When deploying - display: flex;*/
 #start-div {
-display: flex;
-align-items: center;
-flex-wrap: wrap;
-justify-content: center;
-flex-direction: column;
-gap: 30px;
-height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: fit-content;
 }
 
 #button-div {
@@ -113,9 +116,9 @@ height: fit-content;
 
 /*Game div*/
 #game-div {
-display: none;
-text-align: center;
-padding-top: 30px;
+    display: none;
+    text-align: center;
+    padding-top: 30px;
 }
 
 
@@ -136,7 +139,8 @@ padding-top: 30px;
     border: 2px solid black;
 }
 
-#score, #score-username {
+#score,
+#score-username {
     font-size: x-large;
     font-weight: bold;
 }
@@ -149,7 +153,7 @@ padding-top: 30px;
     display: none;
     font-size: xx-large;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     margin: -10px auto;
     width: fit-content;
     padding: 20px;
@@ -157,24 +161,30 @@ padding-top: 30px;
     color: #D7F2BA;
 }
 
-/*Result div*/ /*When deploying - display: none;*/
+/*Result div*/
+/*When deploying - display: none;*/
 #result-div {
-display: none;
-text-align: center;
-padding-top: 60px;
+    display: none;
+    text-align: center;
+    padding-top: 60px;
 }
+
 #result-div button {
     font-size: x-large;
     margin-top: 30px;
 }
 
-#result-message, #final-result {
+#result-message,
+#final-result {
     font-size: xx-large;
 }
 
 /*For tablets*/
-@media screen and (max-width: 991px){
-    #start-div, #game-div, #result-div{
+@media screen and (max-width: 991px) {
+
+    #start-div,
+    #game-div,
+    #result-div {
         width: 85%;
         margin-left: -5%;
     }
@@ -184,12 +194,13 @@ padding-top: 60px;
     }
 
     button:hover {
-        box-shadow:0;
-        }
+        box-shadow: 0;
+    }
 }
 
 /*For phones*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
+
     /*Header*/
     h1 {
         font-size: 1.5rem;
@@ -205,7 +216,9 @@ padding-top: 60px;
     }
 
     /*Main Content*/
-    #start-div, #game-div, #result-div {
+    #start-div,
+    #game-div,
+    #result-div {
         position: fixed;
         right: 5%;
         left: 2%;
@@ -224,23 +237,23 @@ padding-top: 60px;
         justify-content: start;
         gap: 15px;
         height: 70%;
-        }
+    }
 
-        #start-div p {
-            font-size: large;
-        }
+    #start-div p {
+        font-size: large;
+    }
 
-        #start-div label {
-            font-size: large;
-        }
+    #start-div label {
+        font-size: large;
+    }
 
-        #start-div input{
-            font-size: large;
-        }
+    #start-div input {
+        font-size: large;
+    }
 
-        #button-div{
-            gap: 4px;
-        }
+    #button-div {
+        gap: 4px;
+    }
 
     /*Game page*/
     #flag {
@@ -250,7 +263,7 @@ padding-top: 60px;
         max-height: 35%;
     }
 
-    #option-container  {
+    #option-container {
         flex-wrap: wrap;
     }
 
@@ -264,7 +277,8 @@ padding-top: 60px;
     }
 
     /*Result page*/
-    #result-message, #final-result {
+    #result-message,
+    #final-result {
         font-size: x-large;
     }
 }
