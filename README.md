@@ -118,13 +118,13 @@ The general idea of the site has from the beginning been easy and clear. The sit
 
 ### General features on each page
 #### Header
-The header is simple; only containing a h1-heading, a "Home"-link and an icon, the same on used as a favicon.
+The header is simple; only containing a h1-heading, a "Home"-link and an icon, the same one used as a favicon.
 #### Landing page
 The first content that is presented to the user are the simple instructions of "Choose a difficulty! Connect the flag to a country! Compete & learn!". By now the user should understand what the game is about and what the site's purpose is.
 
 The user get the chance (or obligation) to submit a username. The user can not start a game without one. The username will return later on in the game.
 
-They then have the chance to select difficulty; easy, moderate or hard.
+They then have the chance to select difficulty: easy, moderate or hard.
 
 When username and difficulty is chosen the only thing left is to click the big button to start the game.
 #### Game page
@@ -161,6 +161,10 @@ Gitpod - IDE used to write the code
 Favicon - For icon in header and favicon
 
 Balsamiq - For wireframes
+
+W3C - For HTML and CSS validation
+
+JSHint - for Javascript validation
 
 ## Deployment & Local Development
 
@@ -213,7 +217,7 @@ Find the link to the testing made for this site [here](TESTING.md)
 
 - The solution to the bug in the compareAnswer function was created by the Stack Overflow user *dfsq*
 
-- To shuffle the questions and the options The *Fisher-Yates shuffle* function was used.
+- To shuffle the questions and the options the *Fisher-Yates shuffle* function was used.
 
 ###  Media
 

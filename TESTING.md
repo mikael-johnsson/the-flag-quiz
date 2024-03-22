@@ -1,4 +1,4 @@
-# MILESTONE 1 PROJECT NAME - TESTING
+# THE FLAG QUIZ - TESTING
 
 This is the documented testing of the site *The Flag Quiz*.
 
@@ -14,6 +14,7 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
   * [W3C Validator](#w3c-validator)
     * [HTML](#html)
     * [CSS](#css)
+  * [Javascript](#javascript)
   * [Lighthouse](#lighthouse)
     * [Desktop](#desktop)
     * [Mobile](#mobile)
@@ -23,14 +24,14 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
   * [Full Testing](#full-testing)
 
 * [BUGS](#bugs)
-  * [Known Bugs](#known-bugs)
-  * [Solved Bugs](#solved-bugs)
+  * [Solved bugs](#solved-bugs)
+  * [Unsolved Bugs](#unsolved-bugs)
 
 ---
 
 ## AUTOMATED TESTING
 
-###  W3C Validator
+### W3C Validator
 
 #### HTML
 The HTML code was validated through the W3C validator via direct input. It came out with no errors.
