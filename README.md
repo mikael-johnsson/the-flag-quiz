@@ -64,19 +64,17 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
 ### Colour Scheme
 
-The colour scheme's most important task is to not stand in the way of many different flag colours the user will come upon. The background is therefore "tea green" - a light neutral colour you do not see in any flag.
+The colour scheme's most important task is to not stand in the way of the many different flag colours the user will come upon. The background is therefore "tea green" - a light neutral colour you do not see in any flag.
 
 The rest of the palette are suggestions from the colour palette site [coolors.co](https://coolors.co)
 
-Pink is used for header
-
-Dark blue is used for text and button shadows
+Pink is used for header. Dark blue is used for text and button shadows. Red is used for *error message* and *wrong answer message*.
 
 ![Image of the site's colour palette](assets/images/readme/color_palette_2.png)
 
 ### Typography
 
-Fonts are imported from Google Fonts. The font used in first hand is *Gabarito*. It is a sans-serif font well suited for the web. Even though the lines har sharp, it has a subtle smoothness to it which goes well with the soft colours.
+Fonts are imported from Google Fonts. The font used in first hand is *Gabarito*. It is a sans-serif font well suited for the web. Even though the lines appear sharp, it has a subtle smoothness to it which goes well with the soft colours.
 
 The font is used all over the site. In some places the text is bold, but for most of the site the regular font is used.
 
@@ -91,7 +89,7 @@ The font is used all over the site. In some places the text is bold, but for mos
 
 ### Imagery
 
-The only images found on the site are the flags. They are all in scalable png-files, to make them easier to use in a responsive site.
+The only images found on the site are the flags. They are all in scalable png-files, to make them easier to use on a responsive site.
 
 ### Wireframes
 
@@ -121,11 +119,11 @@ The first content that is presented to the user are the simple instructions of "
 
 The user get the chance (or obligation) to submit a username. The user can not start a game without one. The username will return later on in the game.
 
-They then have the chance to select difficulty; ease, moderate or hard.
+They then have the chance to select difficulty; easy, moderate or hard.
 
 When username and difficulty is chosen the only thing left is to click the big button to start the game.
 #### Game page
-The game is simple. A flag of a country in the world is displayed. Below it five option buttons with different countries are displayed. If the user choose correctly, they will get att green message congratulating them and the score will increment by one. They will know it is their score since their username is next to it.
+The game is simple. A flag of a country in the world is displayed. Below it, five option buttons with different countries are displayed. If the user choose correctly, they will get a green message congratulating them and the score will increment by one. They will know it is their score since their username is next to it.
 
 If the wrong option is clicked, the message will appear red with information of what the correct answer should have been.
 
@@ -140,12 +138,8 @@ Wanted implementations are:
 - An automatic solution to add more flags
 - An inverted game mode, where a country's name is displayed and the options are different flags.
 
-### Accessibility
-
 
 ## Technologies Used
-
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 
 ### Languages Used
 This website was created by using HTML, CSS and Javascript.
@@ -214,7 +208,7 @@ Find the link to the testing made for this site [here](TESTING.md)
 
 - The solution to the bug in the compareAnswer function was created by the Stack Overflow user *dfsq*
 
-- To shuffle both the questions and the options The *Fisher-Yates shuffle* function was used.
+- To shuffle the questions and the options The *Fisher-Yates shuffle* function was used.
 
 ###  Media
 
