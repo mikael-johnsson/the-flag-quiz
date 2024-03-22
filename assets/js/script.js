@@ -185,8 +185,6 @@ function compareAnswer(selectedAnswer, correctAnswer){
         document.getElementById("answer-message").innerHTML = `Sorry, ${correctAnswer} <br>was the correct answer!`;
         document.getElementById("answer-message").style.backgroundColor ="#601700";
         setTimeout("hideMessage()", 1800);
-    } else {
-        alert("Something weird happened")
     }
     selectedAnswer ="";
     runGame(flags);
@@ -219,14 +217,14 @@ function endMessage(){
     //Display end message
     let finalResult = parseInt(document.getElementById("score").innerText);
     if (finalResult === 10){
-        document.getElementById("result-message").innerHTML = `Wow! Terriffic job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`
+        document.getElementById("result-message").innerHTML = `Wow! Terriffic job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`;
     } else if(finalResult < 10 && finalResult > 5) {
-        document.getElementById("result-message").innerHTML = `God job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`
+        document.getElementById("result-message").innerHTML = `God job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`;
     } else {
-        document.getElementById("result-message").innerHTML = `You did your best, ${username.value}.<br>You played on ${difficulty} <br>and got ${finalResult} correct answers.`
-    };
+        document.getElementById("result-message").innerHTML = `You did your best, ${username.value}.<br>You played on ${difficulty} <br>and got ${finalResult} correct answers.`;
+    }
    
-};
+}
 
 //Fisher Yates shuffle function
 /**
