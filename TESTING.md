@@ -100,18 +100,34 @@ They tested the site on following browsers:
 |Try again-button|Redirects to landing page|Click|Works|
 |Hover over button (desktop only)|Button give visual cue when hovering with mouse|Hover with mouse|Works|
 
-👩🏻‍💻 View an example of a completed full testing section [here](https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#Full-Testing)
-
-Full testing can be tedious, so it is great to try and break this part up into smaller chunks and do a bit at a time. Full testing is when you go through the site and test every single thing that can be tested. So for example you would test that all links in the navbar correctly redirect the user to where there are supposed to go. A table is the perfect way to display this information.
-
 ## BUGS
-
-### Known Bugs
-
-List (or put in a table) all known bugs on your site here as soon as you find them. This will prevent you from forgetting any at the end. Some (if not all) of these bugs will hopefully make their way over to the next section, solved bugs, as you progress through your project.
+The site has encountered a few bugs, displayed in a list below:
+- compareAnswer function not working
+- Clicking on buttons on tablet/mobile gave remaining hover function
+- No answer message displaying at last question
 
 ### Solved Bugs
+#### compareAnswer bug
+The compareAnswer function (paired with the way to create it's arguments) were supposed to compare the users selected answer to the correct answer. It did not work.
 
-👩🏻‍💻View an example of a completed bugs section [here](https://github.com/kera-cudmore/BookWorm/blob/main/TESTING.md#BUGS)
+![Screenshot of the compareAnswer bug on the site](assets/images/readme/bug_compareAnswer_1.png)
 
-This is where all solved bugs go once squashed. List what the bug was, and how you managed to fix it. You can also include images/videos here if you wanted.
+![Screenshot of the faulty compareAnswer code](assets/images/readme/bug_compareAnswer_2.png)
+
+After enough testing, a different code solution was found on Stack Overflow, created by the user *dfsq*.
+
+![Screenshot of the working code](assets/images/readme/bug_compareAnswer_3.png)
+
+#### Hover function on tablets/mobile
+All the buttons on the site gives a visual cue when hovering them with the mouse. When using a tablet or mobile, that function instead gave the cue after the button had been clicked, and stayed there. This created the problem that one option button at the next question still had the que.
+
+![Screenshot of the faulty hover function on tablet/mobile](assets/images/readme/bug_hover_mobile_correct.png)
+
+The function was removed in the media querie for tablets and mobile.
+
+![Screenshot of the hover solution](assets/images/readme/bug_hover_tablet.png)
+
+
+### Unsolved bugs
+#### No final answer message
+Unfortunately the code, at the moment, does not allow the answer message to display after the final question, as the end message appears instead. The user can still see if the answer was correct by looking at the score before and after answering the question.
