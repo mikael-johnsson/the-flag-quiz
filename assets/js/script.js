@@ -1,6 +1,5 @@
-
 // Flag arrays
-let easyFlags = [
+const easyFlags = [
     {name: "Argentina", flag: "assets/images/flags-easy/argentina.png", answers:["Argentina", "Mexico", "China", "Latvia", "Canada"]},
     {name: "Austria", flag: "assets/images/flags-easy/austria.png", answers:["Austria", "China", "Italy", "France", "Morocco"]},
     {name: "Brazil", flag: "assets/images/flags-easy/brazil.png", answers:["Brazil", "Latvia", "Czech Republic", "Japan", "Canada"]},
@@ -25,7 +24,7 @@ let easyFlags = [
     {name: "United States", flag: "assets/images/flags-easy/united_states.png", answers: ["United States", "Spain", "Denmark", "Mexico", "Italy"]}
 ];
 
-let moderateFlags = [
+const moderateFlags = [
     {name: "Belgium", flag: "assets/images/flags-mid/belgium.png", answers:["Belgium", "Ghana", "Estonia", "Hungary", "South Korea"]},
     {name: "Georgia", flag: "assets/images/flags-mid/georgia.png", answers:["Georgia", "Jamaica", "Nigeria", "Portugal", "Romania"]},
     {name: "Ghana", flag: "assets/images/flags-mid/ghana.png", answers:["Ghana", "Belgium", "Philippines", "Andorra", "Uruguay"]},
@@ -50,7 +49,7 @@ let moderateFlags = [
     {name: "Hungary", flag: "assets/images/flags-mid/hungary.png", answers: ["Hungary", "Belgium", "Jamaica", "Philippines", "Tunisia"]}
 ];
 
-let hardFlags = [
+const hardFlags = [
     {name: "Armenia", flag: "assets/images/flags-hard/armenia.png", answers:["Armenia", "Ethiopia", "Gabon", "Hong Kong", "Ivory Coast"]},
     {name: "Ethiopia", flag: "assets/images/flags-hard/ethiopia.png", answers:["Ethiopia", "Kazakhstan", "Kenya", "Pakistan", "Panama"]},
     {name: "Faroe Islands", flag: "assets/images/flags-hard/faroe_islands.png", answers:["Faroe Islands", "Somalia", "Vatican City", "Venezuela", "Gibraltar"]},
@@ -89,7 +88,6 @@ document.addEventListener("DOMContentLoaded",function(){
     let username = document.getElementById("username");
     username.value = "";
     username.addEventListener("onchange", displayUsername);
-
     //Log users button input
     let buttons = this.getElementsByClassName("difficulty-buttons");
     for (let button of buttons){
@@ -109,13 +107,10 @@ document.addEventListener("DOMContentLoaded",function(){
                 runGame(flags);
             } else {
                 document.getElementById("error-message").style.display = "block";
-                
-                
             }
         } );
     }
 });
-
 /**
  * Used to display the username
  */
@@ -123,7 +118,6 @@ function displayUsername(){
     username = document.getElementById("username");
     document.getElementById("score-username").innerHTML = `${username.value}'s score:`;
 }
-
 /**
  * Displays the game page and 
  * counts if the game is over or not
@@ -132,7 +126,6 @@ function runGame(flags) {
     //To display the game-div
     document.getElementById("start-div").style.display = "none";
     document.getElementById("game-div").style.display = "block";
-    
     //Question counter
     if (questionCounter < 10){
         displayQuestion(flags);
@@ -140,7 +133,6 @@ function runGame(flags) {
         endMessage();
     }
 }
-
 /**
  * Displays flag and options.
  * Logs the users selected answer
@@ -150,24 +142,23 @@ function displayQuestion(flags){
      questionCounter determines which index is presented*/
     let question = flags[questionCounter];
     document.getElementById("flag").src = question.flag;
-  
      //to generate options in shuffled order
      shuffleQ(question);
-     let optionButtons = document.getElementsByClassName("option");
-     let i = 0;
-     while (i <= 4){
-         optionButtons[i].innerHTML = question.answers[i];
-         i++;
+    let optionButtons = document.getElementsByClassName("option");
+    let i = 0;
+    while (i <= 4){
+        optionButtons[i].innerHTML = question.answers[i];
+        i++;
         }
-     questionCounter += 1;
-     
-        for (let y = 0; y < optionButtons.length; y++) {
-            optionButtons[y].onclick = function() {
+    questionCounter += 1;
+    
+    for (let y = 0; y < optionButtons.length; y++) {
+        optionButtons[y].onclick = function() {
 
-            let selectedAnswer = this.innerHTML;
-            compareAnswer(selectedAnswer, question.name);
-         };
-        }
+        let selectedAnswer = this.innerHTML;
+        compareAnswer(selectedAnswer, question.name);
+        };
+    }
 }
 /**
  * Compare the users selected answer 
@@ -189,7 +180,6 @@ function compareAnswer(selectedAnswer, correctAnswer){
     selectedAnswer ="";
     runGame(flags);
 }
-
 //UpdateScore() is taken from CI's Love Maths project
 /**
  * Updates the score if the correct answer was chosen.
@@ -198,12 +188,10 @@ function updateScore(){
     let oldScore = parseInt(document.getElementById("score").innerHTML);
     document.getElementById("score").innerText = ++oldScore;
 }
-
 //To hide answer message after 1.8 seconds
 function hideMessage() {
     document.getElementById("answer-message").style.display ="none";
 }
-
 /**
  * Displays the Result page
  * including the end message
@@ -213,7 +201,6 @@ function endMessage(){
     // Display result div
     document.getElementById("game-div").style.display = "none";
     document.getElementById("result-div").style.display = "block";
-
     //Display end message
     let finalResult = parseInt(document.getElementById("score").innerText);
     if (finalResult === 10){
@@ -223,9 +210,7 @@ function endMessage(){
     } else {
         document.getElementById("result-message").innerHTML = `You did your best, ${username.value}.<br>You played on ${difficulty} <br>and got ${finalResult} correct answers.`;
     }
-   
 }
-
 //Fisher Yates shuffle function
 /**
  * Function used to shuffle the options
@@ -239,7 +224,6 @@ function shuffleQ(question) {
       question.answers[j] = k;
     }
 }
-
 //Fisher Yates shuffle function
 /**
  * Function used to shuffle the questions
