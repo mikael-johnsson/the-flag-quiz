@@ -144,7 +144,7 @@ The hover pseudo class makes all the buttons on the site give a visual cue when 
 
 The function was removed in the media queries for tablets and mobile.
 
-![Screenshot of the hover solution](assets/images/readme/bug_hover_tablet.png)
+![Screenshot of the hover solution](assets/images/readme/bug_hover_final.png)
 
 
 ### Unsolved bugs
