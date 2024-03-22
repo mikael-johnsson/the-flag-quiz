@@ -11,6 +11,9 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
 * [User Experience](#user-experience-ux)
   * [User Stories](#user-stories)
+    * [Client Goals](#client-goals)
+    * [First Time Visitor Goals](#first-time-visitor-goals)
+    * [Returning Visitor Goals](#returning-visitor-goals)
 
 * [Design](#design)
   * [Colour Scheme](#colour-scheme)
@@ -20,8 +23,11 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
 * [Features](#features)
   * [General Features on Each Page](#general-features-on-each-page)
+    * [Header](#header)
+    * [Landing Page](#landing-page)
+    * [Game Page](#game-page)
+    * [Result Page](#result-page)
   * [Future Implementations](#future-implementations)
-  * [Accessibility](#accessibility)
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -37,7 +43,6 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
 * [Credits](#credits)
   * [Code Used](#code-used)
-  * [Content](#content)
   * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
