@@ -12,11 +12,14 @@ Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
 * [AUTOMATED TESTING](#automated-testing)
   * [W3C Validator](#w3c-validator)
+    * [HTML](#html)
+    * [CSS](#css)
   * [Lighthouse](#lighthouse)
+    * [Desktop](#desktop)
+    * [Mobile](#mobile)
   * [WAVE](#wave)
 
 * [MANUAL TESTING](#manual-testing)
-  * [Testing User Stories](#testing-user-stories)
   * [Full Testing](#full-testing)
 
 * [BUGS](#bugs)
@@ -59,9 +62,9 @@ For additional accessibility testing, WAVE has been used to test the site. It re
 ## MANUAL TESTING
 
 ### Full Testing
-Full testing was was performed on a PC with 1920x1080 screen and an iPhone XR.
+Full testing was performed on a PC with 1920x1080 screen and an iPhone XR.
 
-They tested the site on following browsers:
+The site was tested on following browsers:
 - Google Chrome
 - Safari (iPhone only)
 - Mozilla Firefox
@@ -84,19 +87,19 @@ They tested the site on following browsers:
 |Flag|A flag appears||Works|
 |Options|Options appears||Works|
 |Hover over buttons (desktop only)|Buttons give visual cue when hovering with mouse|Hover with mouse|Works|
-|Score text|Username is visual followed by "'s score"||Works|
+|Score text|Username is displayed followed by "'s score"||Works|
 |Score counter|Increment with 1 every time answer is correct|Give correct answer|Works|
 |Answer message|Shows green when answer correct|Give correct answer|Works|
 |Answer message|Shows red when answer wrong|Give wrong answer|Works|
 |Answer message|Displays the correct answer when answer wrong|Give wrong answer|Works|
-|Answer message|Disappears after 1.8 seconds|Wait|Works|
+|Answer message|Disappears after 1.8 seconds|Answer a question and wait|Works|
 |New question|New question to appear after submitting answer|Submit answer|Works|
 |*Result page*||||
 |Game over|Game ends after 10 questions|Play the entire game|Works|
 |End message|Displays different message depending on final score|Get final score 10, <10, <5|Works|
-|End message|Displays chosen difficulty||Works|
-|End message|Displays the username||Works|
-|End message|Displays final score||Works|
+|End message|Displays chosen difficulty|Play the game until finish|Works|
+|End message|Displays the username|Play the game until finish|Works|
+|End message|Displays final score|Play the game until finish|Works|
 |Try again-button|Redirects to landing page|Click|Works|
 |Hover over button (desktop only)|Button give visual cue when hovering with mouse|Hover with mouse|Works|
 
@@ -107,7 +110,6 @@ The site has encountered a few bugs, displayed in a list below:
 - No answer message displaying at last question
 
 ### Solved Bugs
-#### compareAnswer bug
 The compareAnswer function (paired with the way to create it's arguments) were supposed to compare the users selected answer to the correct answer. It did not work.
 
 ![Screenshot of the compareAnswer bug on the site](assets/images/readme/bug_compareAnswer_1.png)
@@ -118,16 +120,16 @@ After enough testing, a different code solution was found on Stack Overflow, cre
 
 ![Screenshot of the working code](assets/images/readme/bug_compareAnswer_3.png)
 
-#### Hover function on tablets/mobile
-All the buttons on the site gives a visual cue when hovering them with the mouse. When using a tablet or mobile, that function instead gave the cue after the button had been clicked, and stayed there. This created the problem that one option button at the next question still had the que.
+---
+The hover pseudo class makes all the buttons on the site give a visual cue when hovering them with the mouse. When using a tablet or mobile that function instead gave the cue after the button had been clicked, and stayed there. This created the problem that one option button at the next question still had the que.
 
 ![Screenshot of the faulty hover function on tablet/mobile](assets/images/readme/bug_hover_mobile_correct.png)
 
-The function was removed in the media querie for tablets and mobile.
+The function was removed in the media queries for tablets and mobile.
 
 ![Screenshot of the hover solution](assets/images/readme/bug_hover_tablet.png)
 
 
 ### Unsolved bugs
-#### No final answer message
+
 Unfortunately the code, at the moment, does not allow the answer message to display after the final question, as the end message appears instead. The user can still see if the answer was correct by looking at the score before and after answering the question.
