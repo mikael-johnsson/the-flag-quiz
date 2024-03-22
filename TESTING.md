@@ -51,20 +51,54 @@ On mobile version the site scored 92, 92, 100, 92.
 ![Screenshot of the lighthouse score for mobile](assets/images/readme/lighthouse_mobile.png)
 
 ### WAVE
-For additional accessibility testing, WAVE has been used to test the site. It rendered three "alerts" indicating that a few paragraph elements should be changed into headings.
+For additional accessibility testing, WAVE has been used to test the site. It rendered three "alerts" indicating that a few paragraph elements could be changed into headings.
 
 ![Screenshot of the WAVE testing](assets/images/readme/wave_validation.png)
 
 
 ## MANUAL TESTING
 
-### Testing User Stories
-
-👩🏻‍💻 View an example of a completed user stories testing section [here](https://github.com/kera-cudmore/BookWorm/blob/main/TESTING.md#Testing-User-Stories)
-
-This is where you will test the user stories you created in the README against your site. I like to use a table for this section - I create a column for the user stories goals, how these have been achieved and I use the third column to add any supporting images.
-
 ### Full Testing
+Full testing was was performed on a PC with 1920x1080 screen and an iPhone XR.
+
+They tested the site on following browsers:
+- Google Chrome
+- Safari (iPhone only)
+- Mozilla Firefox
+- Edge
+
+|Feature|Expected outcome|Testing performed|Result|
+|---|---|---|---|
+|*Header*||||
+|Home-link|Redirect to landing page|Click|Works|
+|*Landing page*||||
+|Username input|Being able to input a username|Input username|Works|
+|Empty username input|Error message to appear|Clicking *Start the quiz* without username submitted|Works|
+|Hover over buttons (desktop only)|Buttons give visual cue when hovering with mouse|Hover with mouse|Works|
+|Choosing difficulty easy|Button stay pressed, easy flags in the game|Click|Works|
+|Choosing difficulty moderate|Button stay pressed, moderate flags in the game|Click|Works|
+|Choosing difficulty hard|Button stay pressed, hard flags in the game|Click|Works|
+|Not choosing difficulty|Error message to appear|Click *Start the quiz* without choosing difficulty|Works|
+|Start quiz|Game page to appear with flags and options|Click|Works|
+|*Game page*||||
+|Flag|A flag appears||Works|
+|Options|Options appears||Works|
+|Hover over buttons (desktop only)|Buttons give visual cue when hovering with mouse|Hover with mouse|Works|
+|Score text|Username is visual followed by "'s score"||Works|
+|Score counter|Increment with 1 every time answer is correct|Give correct answer|Works|
+|Answer message|Shows green when answer correct|Give correct answer|Works|
+|Answer message|Shows red when answer wrong|Give wrong answer|Works|
+|Answer message|Displays the correct answer when answer wrong|Give wrong answer|Works|
+|Answer message|Disappears after 1.8 seconds|Wait|Works|
+|New question|New question to appear after submitting answer|Submit answer|Works|
+|*Result page*||||
+|Game over|Game ends after 10 questions|Play the entire game|Works|
+|End message|Displays different message depending on final score|Get final score 10, <10, <5|Works|
+|End message|Displays chosen difficulty||Works|
+|End message|Displays the username||Works|
+|End message|Displays final score||Works|
+|Try again-button|Redirects to landing page|Click|Works|
+|Hover over button (desktop only)|Button give visual cue when hovering with mouse|Hover with mouse|Works|
 
 👩🏻‍💻 View an example of a completed full testing section [here](https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#Full-Testing)
 
