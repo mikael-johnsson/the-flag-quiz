@@ -40,7 +40,24 @@ The HTML code was validated through the W3C validator via direct input. It came 
 #### CSS
 The CSS code was validated through the W3C validator via direct input. It came out with one error. It warned that it did not validate external stylesheets, in this case the imported Google Fonts.
 
+
+
 ![Screenshot of the "error-message" from W3C Validator](assets/images/readme/css_validation.png)
+
+### Javascript
+The Javascript code has been validated through JSHint.
+
+The validation returned:
+- 12 functions
+- The largest signature take 2 arguments, median is 0
+- The largest function has 12 statements, median is 5
+- The most complex function has a cyclomatic complexity value of 7, median is 2
+
+It also returned 2 warnings:
+
+Line 94 *Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (flags, difficulty, username, displayUsername, shuffleF, runGame)*
+
+Line 156 *Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (compareAnswer, question)*
 ### Lighthouse
 The site is also validated through Lighthouse. The validator tests: Performance, Accessibiltiy, Best Practices and SEO.
 #### Desktop
