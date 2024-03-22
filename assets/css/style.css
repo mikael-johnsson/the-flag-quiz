@@ -51,6 +51,7 @@ button {
     border-radius: 8%;
     font-size: xx-large;
     font-family: inherit;
+    color: #22333B;
 }
 
 button:hover {
@@ -180,6 +181,10 @@ padding-top: 60px;
     #game-div button {
         font-size: x-large;
     }
+
+    button:hover {
+        box-shadow:0;
+        }
 }
 
 /*For phones*/
