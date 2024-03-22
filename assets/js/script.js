@@ -71,7 +71,7 @@ let hardFlags = [
     {name: "Bahrain", flag: "assets/images/flags-hard/bahrain.png", answers: ["Bahrain", "Bhutan", "Vatican City", "Somalia", "Kenya"]},
     {name: "Bhutan", flag: "assets/images/flags-hard/bhutan.png", answers: ["Bhutan", "Hong Kong", "Gabon", "Faroe Islands", "Ethiopia"]},
     {name: "Hong Kong", flag: "assets/images/flags-hard/hongkong.png", answers: ["Hong Kong", "Jordan", "Afghanistan", "Somalia", "Ivory Coast"]},
-    {name: "Jordan", flag: "assets/images/flags-hard/jordan.png", answers: ["Jordan", "Guatemala", "Bhutan", "Kazakhstan", "Guatemala"]}
+    {name: "Jordan", flag: "assets/images/flags-hard/jordan.png", answers: ["Jordan", "Guatemala", "Bhutan", "Kazakhstan", "Somalia"]}
 ]
 // global variable to help runGame
 let questionCounter = 0;
