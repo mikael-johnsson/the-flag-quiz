@@ -48,7 +48,7 @@ let moderateFlags = [
     {name: "Croatia", flag: "assets/images/flags-mid/croatia.png", answers: ["Croatia", "Estonia", "Andorra", "Nigeria", "Georgia"]},
     {name: "Estonia", flag: "assets/images/flags-mid/estonia.png", answers: ["Estonia", "Hungary", "Algeria", "Tunisia", "Portugal"]},
     {name: "Hungary", flag: "assets/images/flags-mid/hungary.png", answers: ["Hungary", "Belgium", "Jamaica", "Philippines", "Tunisia"]}
-]
+];
 
 let hardFlags = [
     {name: "Armenia", flag: "assets/images/flags-hard/armenia.png", answers:["Armenia", "Ethiopia", "Gabon", "Hong Kong", "Ivory Coast"]},
@@ -72,7 +72,7 @@ let hardFlags = [
     {name: "Bhutan", flag: "assets/images/flags-hard/bhutan.png", answers: ["Bhutan", "Hong Kong", "Gabon", "Faroe Islands", "Ethiopia"]},
     {name: "Hong Kong", flag: "assets/images/flags-hard/hongkong.png", answers: ["Hong Kong", "Jordan", "Afghanistan", "Somalia", "Ivory Coast"]},
     {name: "Jordan", flag: "assets/images/flags-hard/jordan.png", answers: ["Jordan", "Guatemala", "Bhutan", "Kazakhstan", "Somalia"]}
-]
+];
 // global variable to help runGame
 let questionCounter = 0;
 
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded",function(){
     make sure you cannot play game without it */
     let username = document.getElementById("username");
     username.value = "";
-    username.addEventListener("onchange", displayUsername)
+    username.addEventListener("onchange", displayUsername);
 
     //Log users button input
     let buttons = this.getElementsByClassName("difficulty-buttons");
@@ -105,16 +105,16 @@ document.addEventListener("DOMContentLoaded",function(){
                 difficulty = "hard";
             } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username.value !== "") {
                 displayUsername();
-                shuffleF(flags)
+                shuffleF(flags);
                 runGame(flags);
             } else {
                 document.getElementById("error-message").style.display = "block";
                 
                 
             }
-        } )
+        } );
     }
-})
+});
 
 /**
  * Used to display the username
@@ -148,7 +148,7 @@ function runGame(flags) {
 function displayQuestion(flags){
      /*To generate flag. The flag array is shuffled each game
      questionCounter determines which index is presented*/
-    let question = flags[questionCounter]
+    let question = flags[questionCounter];
     document.getElementById("flag").src = question.flag;
   
      //to generate options in shuffled order
@@ -179,12 +179,12 @@ function compareAnswer(selectedAnswer, correctAnswer){
         document.getElementById("answer-message").style.display ="block";
         document.getElementById("answer-message").innerHTML = `${correctAnswer} was correct!`;
         document.getElementById("answer-message").style.backgroundColor ="#22333B";
-        setTimeout("hideMessage()", 1800)
+        setTimeout("hideMessage()", 1800);
     } else if (selectedAnswer !== correctAnswer){ 
         document.getElementById("answer-message").style.display ="block";
         document.getElementById("answer-message").innerHTML = `Sorry, ${correctAnswer} <br>was the correct answer!`;
         document.getElementById("answer-message").style.backgroundColor ="#601700";
-        setTimeout("hideMessage()", 1800)
+        setTimeout("hideMessage()", 1800);
     } else {
         alert("Something weird happened")
     }
@@ -217,17 +217,16 @@ function endMessage(){
     document.getElementById("result-div").style.display = "block";
 
     //Display end message
-    let finalResult = parseInt(document.getElementById("score").innerText)
-    console.log(finalResult)
+    let finalResult = parseInt(document.getElementById("score").innerText);
     if (finalResult === 10){
         document.getElementById("result-message").innerHTML = `Wow! Terriffic job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`
     } else if(finalResult < 10 && finalResult > 5) {
         document.getElementById("result-message").innerHTML = `God job ${username.value}!<br>You played on ${difficulty} <br>and got ${finalResult} correct answers!`
     } else {
         document.getElementById("result-message").innerHTML = `You did your best, ${username.value}.<br>You played on ${difficulty} <br>and got ${finalResult} correct answers.`
-    }
+    };
    
-}
+};
 
 //Fisher Yates shuffle function
 /**

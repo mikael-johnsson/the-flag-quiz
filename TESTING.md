@@ -1,12 +1,10 @@
 # MILESTONE 1 PROJECT NAME - TESTING
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Found-In-Translation/blob/main/TESTING.md#found-in-translation----testing-documentation)
+This is the documented testing of the site *The Flag Quiz*.
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+Find the deployed site [here](https://mikael-johnsson.github.io/the-flag-quiz/)
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
-
-If you want to add optional shields.io badges to your TESTING file, I like to add them to this section (Shields.io have some badges for W3C validation which makes it easy to see at a glance whether the project has passed validation).
+![Image of the site on different devices](assets/images/readme/flag_quiz_responsiveness.png)
 
 ---
 
@@ -28,8 +26,6 @@ If you want to add optional shields.io badges to your TESTING file, I like to ad
 ---
 
 ## AUTOMATED TESTING
-
-The Automated Testing includes all the testing that is carried out by a program, like W3C HTML validation.
 
 ###  W3C Validator
 
