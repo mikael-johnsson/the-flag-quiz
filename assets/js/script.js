@@ -83,7 +83,7 @@ let difficulty;
 
 // Wait for DOM to load, get username input and then get difficulty input
 document.addEventListener("DOMContentLoaded",function(){
-    /*log username input and 
+    /*log username input and
     make sure you cannot play game without it */
     let username = document.getElementById("username");
     username.value = "";
