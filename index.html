@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="flag, flags, quiz, country, countries, game, learn, geography">
+    <meta name="description" content="A fun quiz about flags with different difficulty levels">
+    <meta name="author" content="Mikael Johnsson">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <title>The Flag Quiz</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/images/favicons/android-chrome-512x512.png" alt="Logo of a globe">
+        <h1>The Flag Quiz</h1>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <!--Content for landing page-->
+        <div id="start-div">
+            <p id="intro-text">Choose a difficulty! <br>
+                Connect the flag to a country! <br>
+                Compete & learn!</p>
+
+            <!--Username input-->
+            <form>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+            </form>
+            <div id="button-div">
+                <button class="difficulty-buttons" id="easy-button">EASY</button>
+                <button class="difficulty-buttons" id="moderate-button">MODERATE</button>
+                <button class="difficulty-buttons" id="hard-button">HARD</button>
+            </div>
+            <button class="difficulty-buttons" id="start-button">START THE QUIZ</button>
+            <p id="error-message">Have you chosen a valid username <br>and a difficulty level?</p>
+        </div>
+        <!--Content for game-->
+        <div id="game-div">
+            <img src="assets/images/placeholder-img.gif" alt="PLACEHOLDER" id="flag">
+            <div id="option-container">
+                <button class="option">Option1</button>
+                <button class="option">Option2</button>
+                <button class="option">Option3</button>
+                <button class="option">Option4</button>
+                <button class="option">Option5</button>
+            </div>
+            <div>
+                <p id="score-username">Your score:</p>
+                <p id="score">0</p>
+            </div>
+            <div id="answer-message">You were correct!</div>
+        </div>
+        <!--Content for the result-->
+        <div id="result-div">
+            <p id="result-message">Congratulations! You did excellent!</p>
+            <p id="final-result"></p>
+            <button id="restart-button" onclick="location.href=`index.html`;">Try again?</button>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+/*Add fonts here*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&family=Gabarito:wght@400..900&family=Madimi+One&display=swap');
+
+body {
+    background-color: #D7F2BA;
+    color: #22333B;
+    font-family: Gabarito, "Madimi One", "Baloo Chettan 2", sans-serif;
+    padding-bottom: 20px;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    align-items: center;
+    background-color: #CE7DA5;
+    margin: -8px -8px 0 -8px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header a {
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    color: #22333B;
+}
+
+header a:visited {
+    color: #22333B;
+}
+
+header img {
+    width: 90px;
+    height: auto;
+}
+
+/*Main content*/
+#start-div,
+#game-div,
+#result-div {
+    position: fixed;
+    right: 12.5%;
+    left: 12.5%;
+    width: 75%;
+    height: 75%;
+
+}
+
+button {
+    border-radius: 8%;
+    font-size: xx-large;
+    font-family: inherit;
+    color: #22333B;
+}
+
+button:hover {
+    box-shadow: 8px 4px 5px #22333B;
+}
+
+button:active {
+    background-color: #a19b9b;
+    box-shadow: 6px 3px 4px #22333B;
+}
+
+/*Start div*/
+/*When deploying - display: flex;*/
+#start-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: fit-content;
+}
+
+#button-div {
+    display: flex;
+    gap: 30px;
+}
+
+#button-div button:focus {
+    background-color: #a19b9b;
+    box-shadow: 6px 3px 4px #22333B;
+}
+
+#intro-text {
+    text-align: left;
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    align-self: flex-end;
+}
+
+#error-message {
+    display: none;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    color: #601700;
+}
+
+#start-div label {
+    font-size: x-large;
+}
+
+#start-div input {
+    width: 50%;
+    font-size: x-large;
+    line-height: 25px;
+}
+
+/*Game div*/
+#game-div {
+    display: none;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+#game-div p {
+    text-align: center;
+}
+
+#option-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#flag {
+    height: 50%;
+    border: 2px solid black;
+}
+
+#score,
+#score-username {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#score {
+    margin-top: -15px;
+}
+
+#answer-message {
+    display: none;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin: -10px auto;
+    width: fit-content;
+    padding: 20px;
+    background-color: #22333B;
+    color: #D7F2BA;
+}
+
+/*Result div*/
+/*When deploying - display: none;*/
+#result-div {
+    display: none;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#result-div button {
+    font-size: x-large;
+    margin-top: 30px;
+}
+
+#result-message,
+#final-result {
+    font-size: xx-large;
+}
+
+/*For tablets*/
+@media screen and (max-width: 991px) {
+
+    #start-div,
+    #game-div,
+    #result-div {
+        width: 85%;
+        margin-left: -5%;
+    }
+
+    #game-div button {
+        font-size: x-large;
+    }
+
+    button:hover {
+        box-shadow: 0 0 0;
+    }
+}
+
+/*For phones*/
+@media screen and (max-width: 767px) {
+
+    /*Header*/
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header a {
+        font-size: 1.2rem;
+    }
+
+    header img {
+        width: 35px;
+        height: auto;
+    }
+
+    /*Main Content*/
+    #start-div,
+    #game-div,
+    #result-div {
+        position: fixed;
+        right: 5%;
+        left: 2%;
+        width: 95%;
+        height: 75%;
+        margin-left: 0;
+    }
+
+    button {
+        font-size: large;
+    }
+
+    button:hover {
+        box-shadow: 0 0 0;
+    }
+
+    /*Landing page*/
+    #start-div {
+        align-items: center;
+        justify-content: start;
+        gap: 15px;
+        height: 70%;
+    }
+
+    #start-div p {
+        font-size: large;
+    }
+
+    #start-div label {
+        font-size: large;
+    }
+
+    #start-div input {
+        font-size: large;
+    }
+
+    #button-div {
+        gap: 4px;
+    }
+
+    /*Game page*/
+    #flag {
+        width: auto;
+        height: auto;
+        max-width: 95%;
+        max-height: 35%;
+    }
+
+    #option-container {
+        flex-wrap: wrap;
+    }
+
+    #answer-message {
+        font-size: x-large;
+        padding: 10px;
+    }
+
+    #game-div button {
+        font-size: large;
+    }
+
+    /*Result page*/
+    #result-message,
+    #final-result {
+        font-size: x-large;
+    }
+}
