@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded",function(){
             } else if (this.getAttribute("id") === "hard-button"){
                 flags = hardFlags;
                 difficulty = "hard";
-            } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username.value !== "") {
+            } else if (this.getAttribute("id") === "start-button" && flags !== undefined && username.value.trim() !== "") {
                 displayUsername();
                 shuffleF(flags);
                 runGame(flags);
