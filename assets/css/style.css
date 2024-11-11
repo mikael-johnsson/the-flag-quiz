@@ -65,6 +65,10 @@ button:active {
     box-shadow: 6px 3px 4px #22333B;
 }
 
+#game-div button:hover {
+    box-shadow: none;
+}
+
 /*Start div*/
 /*When deploying - display: flex;*/
 #start-div {
