@@ -121,7 +121,6 @@ button:active {
     padding-top: 30px;
 }
 
-
 #game-div p {
     text-align: center;
 }
@@ -191,6 +190,13 @@ button:active {
 
     #game-div button {
         font-size: x-large;
+    }
+
+    #flag {
+        width: auto;
+        height: auto;
+        max-width: 95%;
+        max-height: 35%;
     }
 
     button:hover {
