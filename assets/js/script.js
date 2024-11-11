@@ -76,6 +76,9 @@ const hardFlags = [
 let username = document.getElementById("username");
 username.value = "";
 
+//global variable to help clear timeout
+let timeoutId;
+
 // global variable to help runGame
 let questionCounter = 0;
 
@@ -140,8 +143,6 @@ function runGame(flags) {
  * Logs the users selected answer
  */
 function displayQuestion(flags){
-    // To clear previous answer message
-    clearTimeout(hideMessage)
      /*To generate flag. The flag array is shuffled each game
      questionCounter determines which index is presented*/
     let question = flags[questionCounter];
@@ -158,9 +159,10 @@ function displayQuestion(flags){
     
     for (let y = 0; y < optionButtons.length; y++) {
         optionButtons[y].onclick = function() {
-
-        let selectedAnswer = this.innerHTML;
-        compareAnswer(selectedAnswer, question.name);
+            // To clear previous answer message
+            clearTimeout(timeoutId);
+            let selectedAnswer = this.innerHTML;
+            compareAnswer(selectedAnswer, question.name);
         };
     }
 }
@@ -174,12 +176,12 @@ function compareAnswer(selectedAnswer, correctAnswer){
         document.getElementById("answer-message").style.display ="block";
         document.getElementById("answer-message").innerHTML = `${correctAnswer} was correct!`;
         document.getElementById("answer-message").style.backgroundColor ="#22333B";
-        setTimeout(hideMessage, 1800);
+        timeoutId = setTimeout(hideMessage, 1800);
     } else if (selectedAnswer !== correctAnswer){ 
         document.getElementById("answer-message").style.display ="block";
         document.getElementById("answer-message").innerHTML = `Sorry, ${correctAnswer} <br>was the correct answer!`;
         document.getElementById("answer-message").style.backgroundColor ="#601700";
-        setTimeout(hideMessage, 1800);
+        timeoutId = setTimeout(hideMessage, 1800);
         }
     selectedAnswer ="";
     runGame(flags);
