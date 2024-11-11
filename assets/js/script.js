@@ -140,6 +140,8 @@ function runGame(flags) {
  * Logs the users selected answer
  */
 function displayQuestion(flags){
+    // To clear previous answer message
+    clearTimeout(hideMessage)
      /*To generate flag. The flag array is shuffled each game
      questionCounter determines which index is presented*/
     let question = flags[questionCounter];
