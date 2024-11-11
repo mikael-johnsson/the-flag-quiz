@@ -161,7 +161,12 @@ button:active {
     padding: 15px;
     background-color: #22333B;
     color: #D7F2BA;
-}
+    position: fixed;
+    top: 684px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; 
+    }
 
 /*Result div*/
 /*When deploying - display: none;*/
@@ -199,11 +204,19 @@ button:active {
         height: auto;
         max-width: 95%;
         max-height: 35%;
-        }
+    }
 
-        button:hover {
+    button:hover {
         box-shadow: 0 0 0;
-        }
+    }
+
+    #answer-message {
+        position: fixed;
+        top: 584px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000; 
+    }
     }
 
     /*For wide and short tablets*/
@@ -222,8 +235,15 @@ button:active {
 
     #answer-message {
         font-size: large;
+        position: fixed;
+        top: 480px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000; 
     }
-}
+    }
+
+    
 
 /*For phones*/
 @media screen and (max-width: 767px) {
@@ -300,6 +320,12 @@ button:active {
     #answer-message {
         font-size: x-large;
         padding: 10px;
+        min-width: 170px;
+        position: fixed;
+        top: 554px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000; 
     }
 
     #game-div button {
