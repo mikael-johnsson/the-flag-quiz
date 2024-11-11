@@ -155,7 +155,7 @@ button:active {
     text-align: center;
     margin: -10px auto;
     width: fit-content;
-    padding: 20px;
+    padding: 15px;
     background-color: #22333B;
     color: #D7F2BA;
 }
@@ -197,10 +197,29 @@ button:active {
         height: auto;
         max-width: 95%;
         max-height: 35%;
+        }
+
+        button:hover {
+        box-shadow: 0 0 0;
+        }
     }
 
-    button:hover {
-        box-shadow: 0 0 0;
+    /*For wide and short tablets*/
+    @media screen and (min-width: 700px) and (max-height: 630px) {
+    #flag {
+        width: 40%;
+    }
+
+    button {
+        font-size: x-large;
+    }
+
+    #score, #score-username {
+        font-size: large;
+    }
+
+    #answer-message {
+        font-size: large;
     }
 }
 
