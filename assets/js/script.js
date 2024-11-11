@@ -72,8 +72,9 @@ const hardFlags = [
     {name: "Hong Kong", flag: "assets/images/flags-hard/hongkong.png", answers: ["Hong Kong", "Jordan", "Afghanistan", "Somalia", "Ivory Coast"]},
     {name: "Jordan", flag: "assets/images/flags-hard/jordan.png", answers: ["Jordan", "Guatemala", "Bhutan", "Kazakhstan", "Somalia"]}
 ];
-// globar variable to get username input
+// global variable to get username input
 let username = document.getElementById("username");
+username.value = "";
 
 // global variable to help runGame
 let questionCounter = 0;
@@ -88,7 +89,6 @@ let difficulty;
 document.addEventListener("DOMContentLoaded",function(){
     /*log username input and
     make sure you cannot play game without it */
-    username.value = "";
     username.addEventListener("onchange", displayUsername);
     //Log users button input
     let buttons = this.getElementsByClassName("difficulty-buttons");
